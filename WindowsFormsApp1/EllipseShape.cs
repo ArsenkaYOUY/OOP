@@ -11,13 +11,14 @@ namespace WindowsFormsApp1
     {
         private Rectangle rect;
 
-        public EllipseShape(Rectangle rect, Color color, float width) : base(color, width)
+        public EllipseShape(Color color, float width) : base(color, width)
         {
-            this.rect = rect;
+            pen = new Pen(color, width);
         }
 
-        public override void Draw(Graphics g)
+        public override void Draw(Point p, Graphics g)
         {
+            this.rect = new Rectangle(p.X - 30, p.Y - 30, 60, 60);
             g.DrawEllipse(pen, rect);
         }
     }

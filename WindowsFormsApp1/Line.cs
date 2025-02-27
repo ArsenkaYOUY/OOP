@@ -9,17 +9,15 @@ namespace WindowsFormsApp1
 {
     public class Line : Shape
     {
-        private Point start, end;
 
-        public Line(Point start, Point end, Color color, float width) : base(color, width)
+        public Line( Color color, float width) : base(color, width)
         {
-            this.start = start;
-            this.end = end;
+            pen = new Pen(color, width);
         }
 
-        public override void Draw(Graphics g)
+        public override void Draw(Point p, Graphics g)
         {
-            g.DrawLine(pen, start, end);
+            g.DrawLine(pen, p.X - 50, p.Y, p.X + 50, p.Y);
         }
     }
 }

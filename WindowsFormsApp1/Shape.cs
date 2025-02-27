@@ -11,12 +11,13 @@ namespace WindowsFormsApp1
     {
         protected Pen pen;
 
+
         public Shape(Color color, float width)
         {
             pen = new Pen(color, width);
         }
 
-        public abstract void Draw(Graphics e);
+        public abstract void Draw(Point p, Graphics e);
 
         public virtual void Dispose()
         {

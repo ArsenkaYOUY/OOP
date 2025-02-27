@@ -8,39 +8,89 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace WindowsFormsApp1
 {
-
-    public partial class Form1: Form
+    public partial class Form1 : Form
     {
-        private List<Shape> shapes;
+
+        private Shape selectedShape;
+        private Point p = new Point();
+
+        private Bitmap canvas;
+        private Graphics graphics;
+
+        private List<Bitmap> list;
+        private int currentStateIndex = -1; // Индекс текущего состояния
+
+        private Stack<Shape> shapesDeleted;
         public Form1()
         {
             InitializeComponent();
             this.Size = new Size(500, 500);
             this.Text = "Hello world";
-            this.Paint += new PaintEventHandler(Form1_Paint); // Подписываемся на событие Paint
-            shapes = new List<Shape>
-            {
-            new Line(new Point(50, 50), new Point(200, 50), Color.Black, 2),
-            new RectangleShape(new Rectangle(50, 70, 100, 50), Color.Blue, 2),
-            new EllipseShape(new Rectangle(50, 130, 100, 50), Color.Red, 2),
-            new PolygonShape(new Point[] { new Point(50, 200), new Point(20, 250), new Point(80, 250) }, Color.Green, 2),
-            new PolylineShape(new Point[] { new Point(150, 200), new Point(200, 220), new Point(180, 250), new Point(220, 280) }, Color.Purple, 2)
-            };
+
+            // shapes = new List<Shape>(null) { };
+            list = new List<Bitmap> { };
+            canvas = new Bitmap(panel1.Width, panel1.Height);
+            graphics = Graphics.FromImage(canvas);
+
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void bttnRectangle_Click(object sender, EventArgs e)
+        {
+            selectedShape = new RectangleShape( Color.Blue, 2);
+
+        }
+
+        private void bbtnLine_Click(object sender, EventArgs e)
+        {
+            selectedShape = new Line(Color.Black, 2);
+        }
+
+        private void bttnEllipse_Click(object sender, EventArgs e)
+        {
+            selectedShape = new EllipseShape( Color.Red, 2);
+        }
+
+        private void Form1_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void Form1_Paint(object sender, PaintEventArgs e)
+        private void bttnPolygon_Click(object sender, EventArgs e)
         {
-            foreach (var shape in shapes)
+            selectedShape = new PolygonShape( Color.Green, 2);
+            
+        }
+
+        private void panel1_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (selectedShape != null)
             {
-                shape.Draw(e.Graphics); // Вызываем метод Draw() у всех фигур
+                p.X = e.X;
+                p.Y = e.Y;
+                selectedShape.Draw(p, graphics);
+                list.Add(canvas);
+                panel1.Invalidate();
             }
+          
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+            e.Graphics.DrawImage(canvas, 0, 0);
+        }
+
+        private void bttnBack_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void bttnForward_Click(object sender, EventArgs e)
+        {
+
+           
         }
     }
 }

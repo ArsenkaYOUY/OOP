@@ -11,13 +11,16 @@ namespace WindowsFormsApp1
     {
         private Point[] points;
 
-        public PolygonShape(Point[] points, Color color, float width) : base(color, width)
+        public PolygonShape( Color color, float width) : base(color, width)
         {
-            this.points = points;
+
+            pen = new Pen(color, width);
         }
 
-        public override void Draw(Graphics g)
+        public override void Draw(Point p, Graphics g)
         {
+            this.points = new Point[] { new Point(p.X - 30,p.Y), new Point(p.X + 30, p.Y), new Point(p.X , p.Y - 30) };
+
             g.DrawPolygon(pen, points);
         }
     }
