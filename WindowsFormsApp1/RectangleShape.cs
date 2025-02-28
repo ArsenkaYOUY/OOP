@@ -21,5 +21,9 @@ namespace WindowsFormsApp1
             this.rect = new Rectangle(p.X - 25, p.Y - 25, 50, 50);
             g.DrawRectangle(pen, rect);
         }
+        public override void Draw(Graphics g)
+        {
+            g.DrawRectangle(pen, this.rect);
+        }
     }
 }

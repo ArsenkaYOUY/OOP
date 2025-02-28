@@ -18,6 +18,7 @@ namespace WindowsFormsApp1
         }
 
         public abstract void Draw(Point p, Graphics e);
+        public abstract void Draw( Graphics e);
 
         public virtual void Dispose()
         {

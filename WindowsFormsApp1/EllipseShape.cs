@@ -21,5 +21,10 @@ namespace WindowsFormsApp1
             this.rect = new Rectangle(p.X - 30, p.Y - 30, 60, 60);
             g.DrawEllipse(pen, rect);
         }
+
+        public override void Draw(Graphics g)
+        {
+            g.DrawEllipse(pen, this.rect);
+        }
     }
 }

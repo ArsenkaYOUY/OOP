@@ -17,23 +17,13 @@ namespace WindowsFormsApp1
         private Shape selectedShape;
         private Point p = new Point();
 
-        private Bitmap canvas;
-        private Graphics graphics;
-
-        private List<Bitmap> list;
-        private int currentStateIndex = -1; // Индекс текущего состояния
-
-        private Stack<Shape> shapesDeleted;
+        private List<Shape> shapes;
         public Form1()
         {
             InitializeComponent();
             this.Size = new Size(500, 500);
             this.Text = "Hello world";
-
-            // shapes = new List<Shape>(null) { };
-            list = new List<Bitmap> { };
-            canvas = new Bitmap(panel1.Width, panel1.Height);
-            graphics = Graphics.FromImage(canvas);
+            shapes = new List<Shape> { };
 
         }
 
@@ -60,7 +50,7 @@ namespace WindowsFormsApp1
 
         private void bttnPolygon_Click(object sender, EventArgs e)
         {
-            selectedShape = new PolygonShape( Color.Green, 2);
+            selectedShape = new PolygonShape(Color.Green, 2);
             
         }
 
@@ -70,27 +60,56 @@ namespace WindowsFormsApp1
             {
                 p.X = e.X;
                 p.Y = e.Y;
-                selectedShape.Draw(p, graphics);
-                list.Add(canvas);
-                panel1.Invalidate();
+                Graphics paint;
+                paint = panel1.CreateGraphics();
+                shapes.Add(selectedShape);
+                selectedShape.Draw(p, paint);
+                selectedShape = null;
             }
-          
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
-            e.Graphics.DrawImage(canvas, 0, 0);
+           
         }
 
         private void bttnBack_Click(object sender, EventArgs e)
         {
-           
+            Graphics paint;
+            paint = panel1.CreateGraphics();
+            paint.Clear(Color.White);
+
+            if (shapes.Count > 0 )
+            {
+                int ind = shapes.Count - 1;
+                shapes.RemoveAt(ind);
+
+                int i = 0;
+                if (shapes != null)
+                {
+                    while (i <= shapes.Count - 1)
+                    {
+                        var shapee = shapes.ElementAt(i);
+                        shapee.Draw(paint);
+
+                        i++;
+                    }
+
+                }
+                
+            }
         }
 
         private void bttnForward_Click(object sender, EventArgs e)
         {
 
            
+        }
+
+        private void bttnPolylines_Click(object sender, EventArgs e)
+        {
+
+            selectedShape = new PolylineShape(Color.Green, 2);
         }
     }
 }

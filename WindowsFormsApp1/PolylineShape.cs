@@ -11,16 +11,22 @@ namespace WindowsFormsApp1
     {
         private Point[] points;
 
-        public PolylineShape(Point[] points, Color color, float width) : base(color, width)
+        public PolylineShape( Color color, float width) : base(color, width)
         {
-            this.points = points;
             pen = new Pen(color, width);
         }
 
         public override void Draw(Point p, Graphics g)
         {
-            
+            this.points = new Point[] { new Point(p.X, p.Y), new Point(p.X + 20, p.Y - 20), new Point(p.X + 35, p.Y + 10), new Point(p.X + 15, p.Y + 10), new Point (p.X + 35, p.Y + 35) };
+
             g.DrawLines(pen, points);
+        }
+
+        
+        public override void Draw(Graphics g)
+        {
+            g.DrawLines(pen, this.points);
         }
     }
 }

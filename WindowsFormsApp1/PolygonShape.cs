@@ -23,5 +23,9 @@ namespace WindowsFormsApp1
 
             g.DrawPolygon(pen, points);
         }
+        public override void Draw(Graphics g)
+        {
+            g.DrawPolygon(pen, this.points);
+        }
     }
 }

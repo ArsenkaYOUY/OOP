@@ -96,6 +96,7 @@
             this.bttnPolylines.TabIndex = 4;
             this.bttnPolylines.Text = "Ломаная";
             this.bttnPolylines.UseVisualStyleBackColor = true;
+            this.bttnPolylines.Click += new System.EventHandler(this.bttnPolylines_Click);
             // 
             // groupBox1
             // 
