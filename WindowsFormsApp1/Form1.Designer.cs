@@ -40,12 +40,15 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.numUDWidth = new System.Windows.Forms.NumericUpDown();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.cmbBoxFillColor = new System.Windows.Forms.ComboBox();
             this.cmbBoxLineColor = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtBoxWidth = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numUDWidth)).BeginInit();
             this.SuspendLayout();
             // 
             // bttnRectangle
@@ -56,7 +59,6 @@
             this.bttnRectangle.TabIndex = 0;
             this.bttnRectangle.Text = "Прямоугольник";
             this.bttnRectangle.UseVisualStyleBackColor = true;
-            this.bttnRectangle.Click += new System.EventHandler(this.bttnRectangle_Click);
             // 
             // bttnLine
             // 
@@ -66,7 +68,6 @@
             this.bttnLine.TabIndex = 1;
             this.bttnLine.Text = "Отрезок";
             this.bttnLine.UseVisualStyleBackColor = true;
-            this.bttnLine.Click += new System.EventHandler(this.bbtnLine_Click);
             // 
             // bttnEllipse
             // 
@@ -76,7 +77,6 @@
             this.bttnEllipse.TabIndex = 2;
             this.bttnEllipse.Text = "Эллипс";
             this.bttnEllipse.UseVisualStyleBackColor = true;
-            this.bttnEllipse.Click += new System.EventHandler(this.bttnEllipse_Click);
             // 
             // bttnPolygon
             // 
@@ -86,7 +86,6 @@
             this.bttnPolygon.TabIndex = 3;
             this.bttnPolygon.Text = "Многоугольник";
             this.bttnPolygon.UseVisualStyleBackColor = true;
-            this.bttnPolygon.Click += new System.EventHandler(this.bttnPolygon_Click);
             // 
             // bttnPolylines
             // 
@@ -96,7 +95,6 @@
             this.bttnPolylines.TabIndex = 4;
             this.bttnPolylines.Text = "Ломаная";
             this.bttnPolylines.UseVisualStyleBackColor = true;
-            this.bttnPolylines.Click += new System.EventHandler(this.bttnPolylines_Click);
             // 
             // groupBox1
             // 
@@ -149,9 +147,8 @@
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel1.Location = new System.Drawing.Point(32, 153);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1018, 752);
+            this.panel1.Size = new System.Drawing.Size(1100, 650);
             this.panel1.TabIndex = 6;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             this.panel1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseClick);
             // 
             // label1
@@ -166,15 +163,58 @@
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.groupBox2.Controls.Add(this.numUDWidth);
+            this.groupBox2.Controls.Add(this.label4);
+            this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.cmbBoxFillColor);
             this.groupBox2.Controls.Add(this.cmbBoxLineColor);
             this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Controls.Add(this.txtBoxWidth);
             this.groupBox2.Location = new System.Drawing.Point(811, 28);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(259, 84);
+            this.groupBox2.Size = new System.Drawing.Size(308, 119);
             this.groupBox2.TabIndex = 8;
             this.groupBox2.TabStop = false;
+            // 
+            // numUDWidth
+            // 
+            this.numUDWidth.Location = new System.Drawing.Point(9, 37);
+            this.numUDWidth.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.numUDWidth.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numUDWidth.Name = "numUDWidth";
+            this.numUDWidth.Size = new System.Drawing.Size(89, 22);
+            this.numUDWidth.TabIndex = 6;
+            this.numUDWidth.Value = new decimal(new int[] {
+            2,
+            0,
+            0,
+            0});
+            this.numUDWidth.ValueChanged += new System.EventHandler(this.numUDWidth_ValueChanged);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(174, 55);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(97, 16);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "Цвет заливки";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(165, 9);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(82, 16);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Цвет линии";
             // 
             // cmbBoxFillColor
             // 
@@ -185,16 +225,20 @@
             "Зеленый",
             "Синий",
             "Фиолетовый",
-            "Желтый"});
-            this.cmbBoxFillColor.Location = new System.Drawing.Point(132, 48);
+            "Желтый",
+            "Белый"});
+            this.cmbBoxFillColor.Location = new System.Drawing.Point(168, 73);
             this.cmbBoxFillColor.Name = "cmbBoxFillColor";
             this.cmbBoxFillColor.Size = new System.Drawing.Size(121, 24);
             this.cmbBoxFillColor.TabIndex = 3;
             this.cmbBoxFillColor.Text = "Красный";
+            this.cmbBoxFillColor.SelectedIndexChanged += new System.EventHandler(this.cmbBoxFillColor_SelectedIndexChanged);
             // 
             // cmbBoxLineColor
             // 
+            this.cmbBoxLineColor.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.cmbBoxLineColor.FormattingEnabled = true;
+            this.cmbBoxLineColor.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.cmbBoxLineColor.Items.AddRange(new object[] {
             "Красный",
             "Желтый",
@@ -202,11 +246,12 @@
             "Синий",
             "Фиолетовый",
             "Желтый"});
-            this.cmbBoxLineColor.Location = new System.Drawing.Point(132, 18);
+            this.cmbBoxLineColor.Location = new System.Drawing.Point(168, 28);
             this.cmbBoxLineColor.Name = "cmbBoxLineColor";
             this.cmbBoxLineColor.Size = new System.Drawing.Size(121, 24);
             this.cmbBoxLineColor.TabIndex = 2;
             this.cmbBoxLineColor.Text = "Красный";
+            this.cmbBoxLineColor.SelectedIndexChanged += new System.EventHandler(this.cmbBoxLineColor_SelectedIndexChanged);
             // 
             // label2
             // 
@@ -217,30 +262,27 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Толщина";
             // 
-            // txtBoxWidth
-            // 
-            this.txtBoxWidth.Location = new System.Drawing.Point(6, 37);
-            this.txtBoxWidth.Name = "txtBoxWidth";
-            this.txtBoxWidth.Size = new System.Drawing.Size(65, 22);
-            this.txtBoxWidth.TabIndex = 0;
-            this.txtBoxWidth.Text = "2";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1182, 753);
+            this.ClientSize = new System.Drawing.Size(1182, 823);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox1);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(1200, 870);
+            this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(1200, 870);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Lab2";
-            this.Click += new System.EventHandler(this.Form1_Click);
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numUDWidth)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -261,9 +303,11 @@
         private System.Windows.Forms.ComboBox cmbBoxFillColor;
         private System.Windows.Forms.ComboBox cmbBoxLineColor;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtBoxWidth;
         private System.Windows.Forms.Button bttnForward;
         private System.Windows.Forms.Button bttnBack;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.NumericUpDown numUDWidth;
     }
 }
 

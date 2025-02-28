@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 
 namespace WindowsFormsApp1
@@ -16,46 +17,46 @@ namespace WindowsFormsApp1
 
         private Shape selectedShape;
         private Point p = new Point();
+        private float lineWidth = 2;
+        private Color lineColor = Color.Red;
+        private Color fillColor = Color.Red;
 
         private List<Shape> shapes;
         public Form1()
         {
             InitializeComponent();
-            this.Size = new Size(500, 500);
-            this.Text = "Hello world";
             shapes = new List<Shape> { };
 
         }
 
-        private void bttnRectangle_Click(object sender, EventArgs e)
-        {
-            selectedShape = new RectangleShape( Color.Blue, 2);
-
-        }
-
-        private void bbtnLine_Click(object sender, EventArgs e)
-        {
-            selectedShape = new Line(Color.Black, 2);
-        }
-
-        private void bttnEllipse_Click(object sender, EventArgs e)
-        {
-            selectedShape = new EllipseShape( Color.Red, 2);
-        }
-
-        private void Form1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void bttnPolygon_Click(object sender, EventArgs e)
-        {
-            selectedShape = new PolygonShape(Color.Green, 2);
-            
-        }
 
         private void panel1_MouseClick(object sender, MouseEventArgs e)
         {
+            // Смотреть, на какой кнопке стоит фокус (через свич button.focused) 
+            // в зависимости от активности кнопки выделять память под объект нужной фигуры.
+            // Обработчик нажатия на кнопку не нужен
+
+            if (bttnLine.Focused)
+            { 
+                selectedShape = new Line(lineColor, lineWidth);
+            }
+            else if (bttnPolygon.Focused)
+            {
+                selectedShape = new PolygonShape(lineColor, lineWidth,fillColor);
+            }
+            else if (bttnPolylines.Focused)
+            {
+                selectedShape = new PolylineShape(lineColor, lineWidth);
+            }
+            else if (bttnRectangle.Focused)
+            {
+                selectedShape = new RectangleShape(lineColor, lineWidth, fillColor);
+            }
+            else if (bttnEllipse.Focused)
+            {
+                selectedShape = new EllipseShape(lineColor, lineWidth, fillColor);
+            }
+
             if (selectedShape != null)
             {
                 p.X = e.X;
@@ -68,10 +69,6 @@ namespace WindowsFormsApp1
             }
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-           
-        }
 
         private void bttnBack_Click(object sender, EventArgs e)
         {
@@ -106,10 +103,59 @@ namespace WindowsFormsApp1
            
         }
 
-        private void bttnPolylines_Click(object sender, EventArgs e)
+        private void cmbBoxLineColor_SelectedIndexChanged(object sender, EventArgs e)
         {
+            string selectedText = cmbBoxLineColor.SelectedItem.ToString();
 
-            selectedShape = new PolylineShape(Color.Green, 2);
+            switch (selectedText)
+            {
+                case "Красный":
+                    lineColor = Color.Red;
+                    break;
+                case "Зеленый":
+                    lineColor = Color.Green;
+                    break;
+                case "Синий":
+                    lineColor = Color.Blue;
+                    break;
+                case "Желтый":
+                    lineColor = Color.Yellow;
+                    break;
+                case "Фиолетовый":
+                    lineColor = Color.Purple;
+                    break;
+            }
+        }
+
+        private void cmbBoxFillColor_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string selectedText = cmbBoxFillColor.SelectedItem.ToString();
+            switch (selectedText)
+            {
+                case "Красный":
+                    fillColor = Color.Red;
+                    break;
+                case "Зеленый":
+                    fillColor = Color.Green;
+                    break;
+                case "Синий":
+                    fillColor = Color.Blue;
+                    break;
+                case "Желтый":
+                    fillColor = Color.Yellow;
+                    break;
+                case "Фиолетовый":
+                    fillColor = Color.Purple;
+                    break;
+                case "Белый":
+                    fillColor = Color.White;
+                    break;
+            }
+        }
+
+        private void numUDWidth_ValueChanged(object sender, EventArgs e)
+        {
+            lineWidth = (float)numUDWidth.Value;
         }
     }
 }
