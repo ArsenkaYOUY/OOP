@@ -20,8 +20,29 @@ namespace WindowsFormsApp1
         private float lineWidth = 2;
         private Color lineColor = Color.Red;
         private Color fillColor = Color.Red;
+        private int currShapesIndex = -1;
 
         private List<Shape> shapes;
+
+        private void DrawShapes(int index) 
+        {
+            Graphics paint;
+            paint = panel1.CreateGraphics();
+            paint.Clear(Color.White);
+            int i = 0;
+            if (shapes != null)
+            {
+                 while (i < index + 1)
+                 {
+                     var shapee = shapes.ElementAt(i);
+                     shapee.Draw(paint);
+
+                     i++;
+                 }
+             }
+
+            
+        }
         public Form1()
         {
             InitializeComponent();
@@ -29,13 +50,8 @@ namespace WindowsFormsApp1
 
         }
 
-
         private void panel1_MouseClick(object sender, MouseEventArgs e)
         {
-            // Смотреть, на какой кнопке стоит фокус (через свич button.focused) 
-            // в зависимости от активности кнопки выделять память под объект нужной фигуры.
-            // Обработчик нажатия на кнопку не нужен
-
             if (bttnLine.Focused)
             { 
                 selectedShape = new Line(lineColor, lineWidth);
@@ -63,7 +79,11 @@ namespace WindowsFormsApp1
                 p.Y = e.Y;
                 Graphics paint;
                 paint = panel1.CreateGraphics();
+                if (shapes.Count != 0 )
+                    shapes.RemoveRange(currShapesIndex + 1, shapes.Count - currShapesIndex - 1);
+
                 shapes.Add(selectedShape);
+                currShapesIndex++;
                 selectedShape.Draw(p, paint);
                 selectedShape = null;
             }
@@ -72,35 +92,20 @@ namespace WindowsFormsApp1
 
         private void bttnBack_Click(object sender, EventArgs e)
         {
-            Graphics paint;
-            paint = panel1.CreateGraphics();
-            paint.Clear(Color.White);
-
-            if (shapes.Count > 0 )
+            if (currShapesIndex != -1)
             {
-                int ind = shapes.Count - 1;
-                shapes.RemoveAt(ind);
-
-                int i = 0;
-                if (shapes != null)
-                {
-                    while (i <= shapes.Count - 1)
-                    {
-                        var shapee = shapes.ElementAt(i);
-                        shapee.Draw(paint);
-
-                        i++;
-                    }
-
-                }
-                
+                currShapesIndex--;
+                DrawShapes(currShapesIndex);
             }
         }
 
         private void bttnForward_Click(object sender, EventArgs e)
         {
-
-           
+            if (shapes.Count != currShapesIndex + 1)
+            {
+                currShapesIndex++;
+                DrawShapes(currShapesIndex);
+            }
         }
 
         private void cmbBoxLineColor_SelectedIndexChanged(object sender, EventArgs e)

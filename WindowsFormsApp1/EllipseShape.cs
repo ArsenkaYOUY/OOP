@@ -22,7 +22,7 @@ namespace WindowsFormsApp1
         public override void Draw(Point p, Graphics g)
         {
             this.rect = new Rectangle(p.X - 30, p.Y - 30, 60, 60);
-            g.DrawEllipse(pen, rect);
+            g.DrawEllipse(pen, this.rect);
             g.FillEllipse(this.brush, this.rect);
         }
 
