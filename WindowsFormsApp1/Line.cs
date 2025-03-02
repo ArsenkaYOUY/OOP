@@ -7,22 +7,23 @@ using System.Threading.Tasks;
 
 namespace WindowsFormsApp1
 {
+    [Serializable]
     public class Line : Shape
     {
-        private Point point;
-        public Line( Color color, float width) : base(color, width)
-        {
-            pen = new Pen(color, width);
-        }
+        public Point point { get ; set; }
+
+        public Line() { }
+        public Line(Color color, float width) : base(color, width) { }
 
         public override void Draw(Point p , Graphics g)
         {
-            this.point.X = p.X;
-            this.point.Y = p.Y;
+            this.point = p;
+            Pen pen = new Pen(Color, Width);
             g.DrawLine(pen, p.X - 50, p.Y, p.X + 50, p.Y);
         }
         public override void Draw(Graphics g)
         {
+            Pen pen = new Pen(Color, Width);
             g.DrawLine(pen, this.point.X - 50, this.point.Y, this.point.X + 50, this.point.Y);
         }
     }

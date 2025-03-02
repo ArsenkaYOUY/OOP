@@ -34,6 +34,8 @@
             this.bttnPolygon = new System.Windows.Forms.Button();
             this.bttnPolylines = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.bttnSaveToFile = new System.Windows.Forms.Button();
+            this.bttnLoadFromFile = new System.Windows.Forms.Button();
             this.bttnForward = new System.Windows.Forms.Button();
             this.bttnBack = new System.Windows.Forms.Button();
             this.bttnElse = new System.Windows.Forms.Button();
@@ -62,6 +64,7 @@
             // 
             // bttnLine
             // 
+            this.bttnLine.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.bttnLine.Location = new System.Drawing.Point(149, 21);
             this.bttnLine.Name = "bttnLine";
             this.bttnLine.Size = new System.Drawing.Size(126, 49);
@@ -99,6 +102,8 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.groupBox1.Controls.Add(this.bttnSaveToFile);
+            this.groupBox1.Controls.Add(this.bttnLoadFromFile);
             this.groupBox1.Controls.Add(this.bttnForward);
             this.groupBox1.Controls.Add(this.bttnBack);
             this.groupBox1.Controls.Add(this.bttnElse);
@@ -112,6 +117,26 @@
             this.groupBox1.Size = new System.Drawing.Size(760, 147);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
+            // 
+            // bttnSaveToFile
+            // 
+            this.bttnSaveToFile.Location = new System.Drawing.Point(162, 76);
+            this.bttnSaveToFile.Name = "bttnSaveToFile";
+            this.bttnSaveToFile.Size = new System.Drawing.Size(89, 58);
+            this.bttnSaveToFile.TabIndex = 9;
+            this.bttnSaveToFile.Text = "Сохранить";
+            this.bttnSaveToFile.UseVisualStyleBackColor = true;
+            this.bttnSaveToFile.Click += new System.EventHandler(this.bttnSaveToFile_Click);
+            // 
+            // bttnLoadFromFile
+            // 
+            this.bttnLoadFromFile.Location = new System.Drawing.Point(32, 76);
+            this.bttnLoadFromFile.Name = "bttnLoadFromFile";
+            this.bttnLoadFromFile.Size = new System.Drawing.Size(89, 58);
+            this.bttnLoadFromFile.TabIndex = 8;
+            this.bttnLoadFromFile.Text = "Загрузить";
+            this.bttnLoadFromFile.UseVisualStyleBackColor = true;
+            this.bttnLoadFromFile.Click += new System.EventHandler(this.bttnLoadFromFile_Click);
             // 
             // bttnForward
             // 
@@ -144,7 +169,8 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.panel1.Location = new System.Drawing.Point(34, 153);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1100, 650);
@@ -308,6 +334,8 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.NumericUpDown numUDWidth;
+        private System.Windows.Forms.Button bttnLoadFromFile;
+        private System.Windows.Forms.Button bttnSaveToFile;
     }
 }
 

@@ -8,6 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using System.IO;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 
 
 namespace WindowsFormsApp1
@@ -158,9 +161,89 @@ namespace WindowsFormsApp1
             }
         }
 
+
+        private void SaveShapesToFile(string filePath)
+        {
+            
+            var options = new JsonSerializerOptions
+            {
+                WriteIndented = true,
+                Converters = { new JsonStringEnumConverter() }
+            };
+            string json  = JsonSerializer.Serialize(shapes, options);
+       
+
+       //= JsonSerializer.Serialize(shapes, new JsonSerializerOptions { WriteIndented = true });
+            File.WriteAllText(filePath, json);
+            MessageBox.Show("Файл успешно сохранен.");
+        }
+
+
+        public static List<Shape> DeserializeShapes(string json)
+        {
+            var options = new JsonSerializerOptions
+            {
+                Converters = { new JsonStringEnumConverter() }
+            };
+            return JsonSerializer.Deserialize<List<Shape>>(json, options);
+        }
+
+
+        private void LoadShapesFromFile(string filePath)
+        {
+            if (File.Exists(filePath))
+            {
+
+                string json = File.ReadAllText(filePath);
+
+                shapes = DeserializeShapes(json);
+
+                currShapesIndex = shapes.Count - 1;
+                DrawShapes(currShapesIndex);
+                MessageBox.Show("Файл успешно загружен.");
+            }
+            else
+            {
+                MessageBox.Show("Файл не найден.");
+            }
+        }
+
+
         private void numUDWidth_ValueChanged(object sender, EventArgs e)
         {
             lineWidth = (float)numUDWidth.Value;
+        }
+
+        private void bttnLoadFromFile_Click(object sender, EventArgs e)
+        {
+            using (OpenFileDialog openFileDialog = new OpenFileDialog())
+            {
+                openFileDialog.Filter = "JSON файлы (*.json)|*.json|Все файлы (*.*)|*.*";
+                openFileDialog.Title = "Выберите файл для загрузки";
+
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    string filePath = openFileDialog.FileName;
+                    LoadShapesFromFile(filePath);
+                }
+            }
+        }
+
+
+        private void bttnSaveToFile_Click(object sender, EventArgs e)
+        {
+            using (SaveFileDialog saveFileDialog = new SaveFileDialog())
+            {
+                saveFileDialog.Filter = "JSON файлы (*.json)|*.json|Все файлы (*.*)|*.*";
+                saveFileDialog.Title = "Сохраните файл";
+                saveFileDialog.FileName = "shapes.json";
+
+                if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    string filePath = saveFileDialog.FileName;
+                    SaveShapesToFile(filePath);
+                }
+            }
         }
     }
 }
