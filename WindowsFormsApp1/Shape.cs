@@ -16,14 +16,15 @@ namespace WindowsFormsApp1
     [JsonDerivedType(typeof(PolylineShape), "Polyline")]
     public abstract class Shape
     {
-        public Color Color { get; set; }
+        //public Color Color { get; set; }
         public float Width { get; set; }
+        public SerializableColor Color { get; set; }
 
         public Shape() { }
 
         public Shape(Color color, float width)
         {
-            Color = color;
+            Color = new SerializableColor(color);
             Width = width;
         }
 

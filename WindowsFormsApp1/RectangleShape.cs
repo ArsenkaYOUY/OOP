@@ -11,29 +11,30 @@ namespace WindowsFormsApp1
     [Serializable]
     public class RectangleShape : Shape
     {
-        private Rectangle rect { get; set; }
-        private Brush brush { get; set; }
+        public Rectangle Rect { get; set; }
+        public SerializableColor FillColor { get; set; }
 
         public RectangleShape() { }
 
         public RectangleShape( Color color, float width, Color fillColor) : base(color, width)
         {
-            this.brush = new SolidBrush(fillColor);
-            //pen = new Pen(color, width);
+            FillColor = new SerializableColor(fillColor);
         }
 
         public override void Draw(Point p, Graphics g)
         {
-            this.rect = new Rectangle(p.X - 25, p.Y - 25, 50, 50);
-            Pen pen = new Pen(Color, Width);
-            g.DrawRectangle(pen, this.rect);
-            g.FillRectangle(this.brush, this.rect);
+            this.Rect = new Rectangle(p.X - 25, p.Y - 25, 50, 50);
+            Pen pen = new Pen(Color.ToColor(), Width);
+            g.DrawRectangle(pen, this.Rect);
+            Brush brush = new SolidBrush(FillColor.ToColor());
+            g.FillRectangle(brush, this.Rect);
         }
         public override void Draw(Graphics g)
         {
-            Pen pen = new Pen(Color, Width);
-            g.DrawRectangle(pen, this.rect);
-            g.FillRectangle(this.brush, this.rect);
+            Pen pen = new Pen(Color.ToColor(), Width);
+            g.DrawRectangle(pen, this.Rect);
+            Brush brush = new SolidBrush(FillColor.ToColor());
+            g.FillRectangle(brush, this.Rect);
         }
     }
 }

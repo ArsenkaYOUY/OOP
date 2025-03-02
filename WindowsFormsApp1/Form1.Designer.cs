@@ -64,13 +64,14 @@
             // 
             // bttnLine
             // 
-            this.bttnLine.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.bttnLine.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.bttnLine.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.bttnLine.Location = new System.Drawing.Point(149, 21);
             this.bttnLine.Name = "bttnLine";
             this.bttnLine.Size = new System.Drawing.Size(126, 49);
             this.bttnLine.TabIndex = 1;
             this.bttnLine.Text = "Отрезок";
-            this.bttnLine.UseVisualStyleBackColor = true;
+            this.bttnLine.UseVisualStyleBackColor = false;
             // 
             // bttnEllipse
             // 
@@ -169,7 +170,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel1.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.panel1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.panel1.Location = new System.Drawing.Point(34, 153);
             this.panel1.Name = "panel1";

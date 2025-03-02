@@ -12,29 +12,33 @@ namespace WindowsFormsApp1
     public class EllipseShape : Shape
     {
         public Rectangle rect { get; set; }
-        public Brush brush { get; set; }
+        //public Brush brush { get; set; }
+        public SerializableColor FillColor { get; set; }
 
         public EllipseShape() { }
 
         public EllipseShape(Color color, float width, Color fillColor) : base(color, width)
         {
+            FillColor = new SerializableColor(fillColor);
             //this.brush = new SolidBrush(fillColor);
             //pen = new Pen(color, width);
         }
 
         public override void Draw(Point p, Graphics g)
         {
-            Pen pen = new Pen(Color, Width);
+            Pen pen = new Pen(Color.ToColor(), Width);
             this.rect = new Rectangle(p.X - 30, p.Y - 30, 60, 60);
             g.DrawEllipse(pen, this.rect);
-            g.FillEllipse(this.brush, this.rect);
+            Brush brush = new SolidBrush(FillColor.ToColor());
+            g.FillEllipse(brush, this.rect);
         }
 
         public override void Draw(Graphics g)
         {
-            Pen pen = new Pen(Color, Width);
+            Pen pen = new Pen(Color.ToColor(), Width);
             g.DrawEllipse(pen, this.rect);
-            g.FillEllipse(this.brush, this.rect);
+            Brush brush = new SolidBrush(FillColor.ToColor());
+            g.FillEllipse(brush, this.rect);
         }
     }
 }

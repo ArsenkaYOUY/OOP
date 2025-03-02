@@ -43,8 +43,6 @@ namespace WindowsFormsApp1
                      i++;
                  }
              }
-
-            
         }
         public Form1()
         {
@@ -161,54 +159,6 @@ namespace WindowsFormsApp1
             }
         }
 
-
-        private void SaveShapesToFile(string filePath)
-        {
-            
-            var options = new JsonSerializerOptions
-            {
-                WriteIndented = true,
-                Converters = { new JsonStringEnumConverter() }
-            };
-            string json  = JsonSerializer.Serialize(shapes, options);
-       
-
-       //= JsonSerializer.Serialize(shapes, new JsonSerializerOptions { WriteIndented = true });
-            File.WriteAllText(filePath, json);
-            MessageBox.Show("Файл успешно сохранен.");
-        }
-
-
-        public static List<Shape> DeserializeShapes(string json)
-        {
-            var options = new JsonSerializerOptions
-            {
-                Converters = { new JsonStringEnumConverter() }
-            };
-            return JsonSerializer.Deserialize<List<Shape>>(json, options);
-        }
-
-
-        private void LoadShapesFromFile(string filePath)
-        {
-            if (File.Exists(filePath))
-            {
-
-                string json = File.ReadAllText(filePath);
-
-                shapes = DeserializeShapes(json);
-
-                currShapesIndex = shapes.Count - 1;
-                DrawShapes(currShapesIndex);
-                MessageBox.Show("Файл успешно загружен.");
-            }
-            else
-            {
-                MessageBox.Show("Файл не найден.");
-            }
-        }
-
-
         private void numUDWidth_ValueChanged(object sender, EventArgs e)
         {
             lineWidth = (float)numUDWidth.Value;
@@ -224,7 +174,25 @@ namespace WindowsFormsApp1
                 if (openFileDialog.ShowDialog() == DialogResult.OK)
                 {
                     string filePath = openFileDialog.FileName;
-                    LoadShapesFromFile(filePath);
+
+                    if (File.Exists(filePath))
+                    {
+
+                        string json = File.ReadAllText(filePath);
+
+                        var options = new JsonSerializerOptions
+                        {
+                            Converters = { new JsonStringEnumConverter() }
+                        };
+                        shapes =  JsonSerializer.Deserialize<List<Shape>>(json, options);
+                        currShapesIndex = shapes.Count - 1;
+                        DrawShapes(currShapesIndex);
+                        MessageBox.Show("Файл успешно загружен.");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Файл не найден.");
+                    }
                 }
             }
         }
@@ -241,7 +209,19 @@ namespace WindowsFormsApp1
                 if (saveFileDialog.ShowDialog() == DialogResult.OK)
                 {
                     string filePath = saveFileDialog.FileName;
-                    SaveShapesToFile(filePath);
+
+                    if (shapes.Count != 0)
+                        shapes.RemoveRange(currShapesIndex + 1, shapes.Count - currShapesIndex - 1);
+
+                    var options = new JsonSerializerOptions
+                    {
+                         WriteIndented = true,
+                         Converters = { new JsonStringEnumConverter() }
+                    };
+                    string json = JsonSerializer.Serialize(shapes, options);
+
+                    File.WriteAllText(filePath, json);
+                    MessageBox.Show("Файл успешно сохранен.");
                 }
             }
         }

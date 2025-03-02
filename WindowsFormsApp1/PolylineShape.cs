@@ -16,14 +16,15 @@ namespace WindowsFormsApp1
         public override void Draw(Point p, Graphics g)
         {
             this.points = new Point[] { new Point(p.X, p.Y), new Point(p.X + 20, p.Y - 20), new Point(p.X + 35, p.Y + 10), new Point(p.X + 15, p.Y + 10), new Point (p.X + 35, p.Y + 35) };
-            Pen pen = new Pen(Color, Width);
+
+            Pen pen = new Pen(Color.ToColor(), Width);
             g.DrawLines(pen, this.points);
         }
 
         
         public override void Draw(Graphics g)
         {
-            Pen pen = new Pen(Color, Width);
+            Pen pen = new Pen(Color.ToColor(), Width);
             g.DrawLines(pen, this.points);
         }
     }
