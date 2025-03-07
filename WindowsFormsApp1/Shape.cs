@@ -16,7 +16,6 @@ namespace WindowsFormsApp1
     [JsonDerivedType(typeof(PolylineShape), "Polyline")]
     public abstract class Shape
     {
-        //public Color Color { get; set; }
         public float Width { get; set; }
         public SerializableColor Color { get; set; }
 
@@ -30,10 +29,5 @@ namespace WindowsFormsApp1
 
         public abstract void Draw(Point p, Graphics e);
         public abstract void Draw( Graphics e);
-
-        //public virtual void Dispose()
-        //{
-        //    pen.Dispose();
-        //}
     }
 }

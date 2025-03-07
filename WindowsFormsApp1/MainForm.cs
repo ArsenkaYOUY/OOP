@@ -15,7 +15,7 @@ using System.Text.Json.Serialization;
 
 namespace WindowsFormsApp1
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
 
         private Shape selectedShape;
@@ -44,7 +44,7 @@ namespace WindowsFormsApp1
                  }
              }
         }
-        public Form1()
+        public MainForm()
         {
             InitializeComponent();
             shapes = new List<Shape> { };
@@ -223,6 +223,19 @@ namespace WindowsFormsApp1
                     File.WriteAllText(filePath, json);
                     MessageBox.Show("Файл успешно сохранен.");
                 }
+            }
+        }
+
+        private void bttnAddPlugins_Click(object sender, EventArgs e)
+        {
+            List<string> shapesToAdd = new List<string> { "Треугольник", "Звезда", "Пятиугольник" }; 
+            // Заменить на реальные фигуры
+
+            PluginSelectionForm selectionForm = new PluginSelectionForm(shapesToAdd);
+
+            if (selectionForm.ShowDialog() == DialogResult.OK)
+            {
+
             }
         }
     }

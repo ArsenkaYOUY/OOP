@@ -20,8 +20,6 @@ namespace WindowsFormsApp1
         public EllipseShape(Color color, float width, Color fillColor) : base(color, width)
         {
             FillColor = new SerializableColor(fillColor);
-            //this.brush = new SolidBrush(fillColor);
-            //pen = new Pen(color, width);
         }
 
         public override void Draw(Point p, Graphics g)

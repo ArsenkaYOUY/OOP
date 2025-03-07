@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp1
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         /// Обязательная переменная конструктора.
@@ -38,7 +38,7 @@
             this.bttnLoadFromFile = new System.Windows.Forms.Button();
             this.bttnForward = new System.Windows.Forms.Button();
             this.bttnBack = new System.Windows.Forms.Button();
-            this.bttnElse = new System.Windows.Forms.Button();
+            this.bttnAddPlugins = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -48,16 +48,21 @@
             this.cmbBoxFillColor = new System.Windows.Forms.ComboBox();
             this.cmbBoxLineColor = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numUDWidth)).BeginInit();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // bttnRectangle
             // 
-            this.bttnRectangle.Location = new System.Drawing.Point(17, 21);
+            this.bttnRectangle.Location = new System.Drawing.Point(5, 17);
+            this.bttnRectangle.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.bttnRectangle.Name = "bttnRectangle";
-            this.bttnRectangle.Size = new System.Drawing.Size(126, 49);
+            this.bttnRectangle.Size = new System.Drawing.Size(110, 46);
             this.bttnRectangle.TabIndex = 0;
             this.bttnRectangle.Text = "Прямоугольник";
             this.bttnRectangle.UseVisualStyleBackColor = true;
@@ -66,36 +71,40 @@
             // 
             this.bttnLine.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.bttnLine.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.bttnLine.Location = new System.Drawing.Point(149, 21);
+            this.bttnLine.Location = new System.Drawing.Point(121, 20);
+            this.bttnLine.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.bttnLine.Name = "bttnLine";
-            this.bttnLine.Size = new System.Drawing.Size(126, 49);
+            this.bttnLine.Size = new System.Drawing.Size(110, 46);
             this.bttnLine.TabIndex = 1;
             this.bttnLine.Text = "Отрезок";
             this.bttnLine.UseVisualStyleBackColor = false;
             // 
             // bttnEllipse
             // 
-            this.bttnEllipse.Location = new System.Drawing.Point(281, 21);
+            this.bttnEllipse.Location = new System.Drawing.Point(236, 21);
+            this.bttnEllipse.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.bttnEllipse.Name = "bttnEllipse";
-            this.bttnEllipse.Size = new System.Drawing.Size(126, 49);
+            this.bttnEllipse.Size = new System.Drawing.Size(110, 46);
             this.bttnEllipse.TabIndex = 2;
             this.bttnEllipse.Text = "Эллипс";
             this.bttnEllipse.UseVisualStyleBackColor = true;
             // 
             // bttnPolygon
             // 
-            this.bttnPolygon.Location = new System.Drawing.Point(413, 21);
+            this.bttnPolygon.Location = new System.Drawing.Point(352, 21);
+            this.bttnPolygon.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.bttnPolygon.Name = "bttnPolygon";
-            this.bttnPolygon.Size = new System.Drawing.Size(126, 49);
+            this.bttnPolygon.Size = new System.Drawing.Size(110, 46);
             this.bttnPolygon.TabIndex = 3;
             this.bttnPolygon.Text = "Многоугольник";
             this.bttnPolygon.UseVisualStyleBackColor = true;
             // 
             // bttnPolylines
             // 
-            this.bttnPolylines.Location = new System.Drawing.Point(545, 21);
+            this.bttnPolylines.Location = new System.Drawing.Point(467, 21);
+            this.bttnPolylines.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.bttnPolylines.Name = "bttnPolylines";
-            this.bttnPolylines.Size = new System.Drawing.Size(126, 49);
+            this.bttnPolylines.Size = new System.Drawing.Size(110, 46);
             this.bttnPolylines.TabIndex = 4;
             this.bttnPolylines.Text = "Ломаная";
             this.bttnPolylines.UseVisualStyleBackColor = true;
@@ -107,23 +116,25 @@
             this.groupBox1.Controls.Add(this.bttnLoadFromFile);
             this.groupBox1.Controls.Add(this.bttnForward);
             this.groupBox1.Controls.Add(this.bttnBack);
-            this.groupBox1.Controls.Add(this.bttnElse);
             this.groupBox1.Controls.Add(this.bttnRectangle);
             this.groupBox1.Controls.Add(this.bttnPolylines);
             this.groupBox1.Controls.Add(this.bttnPolygon);
             this.groupBox1.Controls.Add(this.bttnLine);
             this.groupBox1.Controls.Add(this.bttnEllipse);
-            this.groupBox1.Location = new System.Drawing.Point(2, 0);
+            this.groupBox1.Location = new System.Drawing.Point(30, 27);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(760, 147);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.groupBox1.Size = new System.Drawing.Size(607, 137);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             // 
             // bttnSaveToFile
             // 
-            this.bttnSaveToFile.Location = new System.Drawing.Point(162, 76);
+            this.bttnSaveToFile.Location = new System.Drawing.Point(142, 72);
+            this.bttnSaveToFile.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.bttnSaveToFile.Name = "bttnSaveToFile";
-            this.bttnSaveToFile.Size = new System.Drawing.Size(89, 58);
+            this.bttnSaveToFile.Size = new System.Drawing.Size(88, 54);
             this.bttnSaveToFile.TabIndex = 9;
             this.bttnSaveToFile.Text = "Сохранить";
             this.bttnSaveToFile.UseVisualStyleBackColor = true;
@@ -131,9 +142,10 @@
             // 
             // bttnLoadFromFile
             // 
-            this.bttnLoadFromFile.Location = new System.Drawing.Point(32, 76);
+            this.bttnLoadFromFile.Location = new System.Drawing.Point(28, 72);
+            this.bttnLoadFromFile.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.bttnLoadFromFile.Name = "bttnLoadFromFile";
-            this.bttnLoadFromFile.Size = new System.Drawing.Size(89, 58);
+            this.bttnLoadFromFile.Size = new System.Drawing.Size(78, 54);
             this.bttnLoadFromFile.TabIndex = 8;
             this.bttnLoadFromFile.Text = "Загрузить";
             this.bttnLoadFromFile.UseVisualStyleBackColor = true;
@@ -141,9 +153,10 @@
             // 
             // bttnForward
             // 
-            this.bttnForward.Location = new System.Drawing.Point(680, 76);
+            this.bttnForward.Location = new System.Drawing.Point(475, 76);
+            this.bttnForward.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.bttnForward.Name = "bttnForward";
-            this.bttnForward.Size = new System.Drawing.Size(74, 49);
+            this.bttnForward.Size = new System.Drawing.Size(65, 46);
             this.bttnForward.TabIndex = 7;
             this.bttnForward.Text = "Вперед";
             this.bttnForward.UseVisualStyleBackColor = true;
@@ -151,37 +164,42 @@
             // 
             // bttnBack
             // 
-            this.bttnBack.Location = new System.Drawing.Point(605, 76);
+            this.bttnBack.Location = new System.Drawing.Point(412, 76);
+            this.bttnBack.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.bttnBack.Name = "bttnBack";
-            this.bttnBack.Size = new System.Drawing.Size(66, 49);
+            this.bttnBack.Size = new System.Drawing.Size(58, 46);
             this.bttnBack.TabIndex = 6;
             this.bttnBack.Text = "Назад";
             this.bttnBack.UseVisualStyleBackColor = true;
             this.bttnBack.Click += new System.EventHandler(this.bttnBack_Click);
             // 
-            // bttnElse
+            // bttnAddPlugins
             // 
-            this.bttnElse.Location = new System.Drawing.Point(680, 21);
-            this.bttnElse.Name = "bttnElse";
-            this.bttnElse.Size = new System.Drawing.Size(63, 49);
-            this.bttnElse.TabIndex = 5;
-            this.bttnElse.Text = "+";
-            this.bttnElse.UseVisualStyleBackColor = true;
+            this.bttnAddPlugins.Location = new System.Drawing.Point(8, 12);
+            this.bttnAddPlugins.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.bttnAddPlugins.Name = "bttnAddPlugins";
+            this.bttnAddPlugins.Size = new System.Drawing.Size(55, 46);
+            this.bttnAddPlugins.TabIndex = 5;
+            this.bttnAddPlugins.Text = "+";
+            this.bttnAddPlugins.UseVisualStyleBackColor = true;
+            this.bttnAddPlugins.Click += new System.EventHandler(this.bttnAddPlugins_Click);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.panel1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.panel1.Location = new System.Drawing.Point(34, 153);
+            this.panel1.Location = new System.Drawing.Point(30, 182);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1100, 650);
+            this.panel1.Size = new System.Drawing.Size(1152, 653);
             this.panel1.TabIndex = 6;
             this.panel1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseClick);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(808, 9);
+            this.label1.Location = new System.Drawing.Point(917, 27);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(155, 16);
             this.label1.TabIndex = 7;
@@ -196,15 +214,18 @@
             this.groupBox2.Controls.Add(this.cmbBoxFillColor);
             this.groupBox2.Controls.Add(this.cmbBoxLineColor);
             this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Location = new System.Drawing.Point(811, 28);
+            this.groupBox2.Location = new System.Drawing.Point(920, 44);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(308, 119);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.groupBox2.Size = new System.Drawing.Size(270, 112);
             this.groupBox2.TabIndex = 8;
             this.groupBox2.TabStop = false;
             // 
             // numUDWidth
             // 
-            this.numUDWidth.Location = new System.Drawing.Point(9, 37);
+            this.numUDWidth.Location = new System.Drawing.Point(8, 35);
+            this.numUDWidth.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.numUDWidth.Maximum = new decimal(new int[] {
             20,
             0,
@@ -216,7 +237,7 @@
             0,
             0});
             this.numUDWidth.Name = "numUDWidth";
-            this.numUDWidth.Size = new System.Drawing.Size(89, 22);
+            this.numUDWidth.Size = new System.Drawing.Size(78, 21);
             this.numUDWidth.TabIndex = 6;
             this.numUDWidth.Value = new decimal(new int[] {
             2,
@@ -228,7 +249,8 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(174, 55);
+            this.label4.Location = new System.Drawing.Point(152, 52);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(97, 16);
             this.label4.TabIndex = 5;
@@ -237,7 +259,8 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(165, 9);
+            this.label3.Location = new System.Drawing.Point(144, 8);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(82, 16);
             this.label3.TabIndex = 4;
@@ -254,9 +277,10 @@
             "Фиолетовый",
             "Желтый",
             "Белый"});
-            this.cmbBoxFillColor.Location = new System.Drawing.Point(168, 73);
+            this.cmbBoxFillColor.Location = new System.Drawing.Point(147, 68);
+            this.cmbBoxFillColor.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.cmbBoxFillColor.Name = "cmbBoxFillColor";
-            this.cmbBoxFillColor.Size = new System.Drawing.Size(121, 24);
+            this.cmbBoxFillColor.Size = new System.Drawing.Size(106, 23);
             this.cmbBoxFillColor.TabIndex = 3;
             this.cmbBoxFillColor.Text = "Красный";
             this.cmbBoxFillColor.SelectedIndexChanged += new System.EventHandler(this.cmbBoxFillColor_SelectedIndexChanged);
@@ -273,9 +297,10 @@
             "Синий",
             "Фиолетовый",
             "Желтый"});
-            this.cmbBoxLineColor.Location = new System.Drawing.Point(168, 28);
+            this.cmbBoxLineColor.Location = new System.Drawing.Point(147, 27);
+            this.cmbBoxLineColor.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.cmbBoxLineColor.Name = "cmbBoxLineColor";
-            this.cmbBoxLineColor.Size = new System.Drawing.Size(121, 24);
+            this.cmbBoxLineColor.Size = new System.Drawing.Size(106, 23);
             this.cmbBoxLineColor.TabIndex = 2;
             this.cmbBoxLineColor.Text = "Красный";
             this.cmbBoxLineColor.SelectedIndexChanged += new System.EventHandler(this.cmbBoxLineColor_SelectedIndexChanged);
@@ -283,33 +308,71 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 18);
+            this.label2.Location = new System.Drawing.Point(5, 17);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(65, 16);
             this.label2.TabIndex = 1;
             this.label2.Text = "Толщина";
             // 
-            // Form1
+            // groupBox3
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.groupBox3.Controls.Add(this.bttnAddPlugins);
+            this.groupBox3.Location = new System.Drawing.Point(654, 27);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.groupBox3.Size = new System.Drawing.Size(241, 137);
+            this.groupBox3.TabIndex = 9;
+            this.groupBox3.TabStop = false;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(31, 8);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(156, 16);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "Фигуры для рисования";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(660, 8);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(64, 16);
+            this.label6.TabIndex = 11;
+            this.label6.Text = "Плагины";
+            // 
+            // MainForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1182, 823);
+            this.ClientSize = new System.Drawing.Size(1209, 847);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox1);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(1200, 870);
+            this.MaximumSize = new System.Drawing.Size(1227, 894);
             this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(1200, 870);
-            this.Name = "Form1";
+            this.MinimumSize = new System.Drawing.Size(1227, 894);
+            this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Lab2";
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numUDWidth)).EndInit();
+            this.groupBox3.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -323,7 +386,7 @@
         private System.Windows.Forms.Button bttnPolygon;
         private System.Windows.Forms.Button bttnPolylines;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button bttnElse;
+        private System.Windows.Forms.Button bttnAddPlugins;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox2;
@@ -337,6 +400,9 @@
         private System.Windows.Forms.NumericUpDown numUDWidth;
         private System.Windows.Forms.Button bttnLoadFromFile;
         private System.Windows.Forms.Button bttnSaveToFile;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
     }
 }
 

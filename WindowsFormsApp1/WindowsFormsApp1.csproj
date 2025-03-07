@@ -78,13 +78,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EllipseShape.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Line.cs" />
+    <Compile Include="PluginSelectionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PluginSelectionForm.Designer.cs">
+      <DependentUpon>PluginSelectionForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="PolygonShape.cs" />
     <Compile Include="PolylineShape.cs" />
     <Compile Include="Program.cs" />
@@ -92,8 +98,11 @@
     <Compile Include="RectangleShape.cs" />
     <Compile Include="SerializableColor.cs" />
     <Compile Include="Shape.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PluginSelectionForm.resx">
+      <DependentUpon>PluginSelectionForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
