@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+//using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using System.IO;
 using System.Text.Json;
 using System.Text.Json.Serialization;
@@ -17,7 +17,7 @@ namespace WindowsFormsApp1
 {
     public partial class MainForm : Form
     {
-
+        private int buttonCount = 0;
         private Shape selectedShape;
         private Point p = new Point();
         private float lineWidth = 2;
@@ -73,6 +73,10 @@ namespace WindowsFormsApp1
             {
                 selectedShape = new EllipseShape(lineColor, lineWidth, fillColor);
             }
+            else
+            {
+                selectedShape = shapeFromPlugin();
+            }
 
             if (selectedShape != null)
             {
@@ -80,7 +84,7 @@ namespace WindowsFormsApp1
                 p.Y = e.Y;
                 Graphics paint;
                 paint = panel1.CreateGraphics();
-                if (shapes.Count != 0 )
+                if (shapes.Count != 0)
                     shapes.RemoveRange(currShapesIndex + 1, shapes.Count - currShapesIndex - 1);
 
                 shapes.Add(selectedShape);
@@ -221,21 +225,84 @@ namespace WindowsFormsApp1
                     string json = JsonSerializer.Serialize(shapes, options);
 
                     File.WriteAllText(filePath, json);
+
                     MessageBox.Show("Файл успешно сохранен.");
                 }
             }
         }
+
+        private Shape shapeFromPlugin()
+        {
+            Shape selectedShape = null;
+            foreach (Control ctrl in groupBox3.Controls)
+            {
+                // если ctrl = button, то сохраняется в переменную existingButton.
+                if (ctrl is Button existingButton)
+                {
+                    switch (existingButton.Text)
+                    {
+                        case "Пятиугольник":
+                            selectedShape = new PolylineShape(lineColor, lineWidth);
+                            // Как-то загрузить из файла классы, создать объект нужного класса или что-то такое
+                            // Сделать также с сериализацией
+                            //selectedShape = new PolylineShape(lineColor, lineWidth);
+                            break;
+                        case "Звезда":
+                            break;
+                        case "Еще что-то":
+                            break;
+                    }
+                }
+            }
+
+            return selectedShape;
+        }
+
+        private void AddButton (string bttnText)
+        {
+            foreach (Control ctrl in groupBox3.Controls)
+            {
+                // если ctrl = button, то сохраняется в переменную existingButton.
+                if (ctrl is Button existingButton && existingButton.Text == bttnText)
+                {
+                    MessageBox.Show("Добавляемая фигура уже существует", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return; // Прерываем выполнение метода, если кнопка уже есть
+                }
+            }
+
+            Button button = new Button();
+            button.Text = bttnText; 
+            button.BackColor = Color.White; // Белый фон
+            button.Size = new Size(126, 49);
+
+            int padding = 10;
+            button.Location = new Point(padding, buttonCount * button.Height + padding + 5);
+
+            groupBox3.Controls.Add(button);
+
+            // Увеличиваем счётчик кнопок
+            buttonCount++;
+
+            MessageBox.Show("Фигура " + bttnText + " успешно добавлена");
+
+        }
+
+
 
         private void bttnAddPlugins_Click(object sender, EventArgs e)
         {
             List<string> shapesToAdd = new List<string> { "Треугольник", "Звезда", "Пятиугольник" }; 
             // Заменить на реальные фигуры
 
-            PluginSelectionForm selectionForm = new PluginSelectionForm(shapesToAdd);
+            PluginSelectionForm PluginForm = new PluginSelectionForm(shapesToAdd);
 
-            if (selectionForm.ShowDialog() == DialogResult.OK)
+            if (PluginForm.ShowDialog() == DialogResult.OK)
             {
-
+                string selectedShape = PluginForm.SelectedShape; 
+                if (!string.IsNullOrEmpty(selectedShape))
+                {
+                    AddButton(selectedShape);
+                }
             }
         }
     }

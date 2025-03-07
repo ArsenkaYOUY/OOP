@@ -21,9 +21,14 @@ namespace WindowsFormsApp1
             listBoxPlugins.Items.AddRange(possibleShapes.ToArray());
         }
 
-        private void bttnAddPlugin_Click(object sender, EventArgs e)
+        private void bttnAddPlugin_Click_1(object sender, EventArgs e)
         {
-
+            if (listBoxPlugins.SelectedItem != null)
+            {
+                SelectedShape = listBoxPlugins.SelectedItem.ToString(); 
+                this.DialogResult = DialogResult.OK;
+                this.Close();
+            }
         }
     }
 }
