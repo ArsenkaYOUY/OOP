@@ -7,10 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-//using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using System.IO;
 using System.Text.Json;
 using System.Text.Json.Serialization;
+//using StarShapeLibrary;
 
 
 namespace WindowsFormsApp1
@@ -30,20 +30,23 @@ namespace WindowsFormsApp1
         private void DrawShapes(int index) 
         {
             Graphics paint;
-            paint = panel1.CreateGraphics();
-            paint.Clear(Color.White);
-            int i = 0;
-            if (shapes != null)
+            using (paint = panel1.CreateGraphics())
             {
-                 while (i < index + 1)
-                 {
-                     var shapee = shapes.ElementAt(i);
-                     shapee.Draw(paint);
+                paint.Clear(Color.White);
+                int i = 0;
+                if (shapes != null)
+                {
+                    while (i < index + 1)
+                    {
+                        var shapee = shapes.ElementAt(i);
+                        shapee.Draw(paint);
 
-                     i++;
-                 }
-             }
+                        i++;
+                    }
+                }
+            }              
         }
+
         public MainForm()
         {
             InitializeComponent();
@@ -83,13 +86,18 @@ namespace WindowsFormsApp1
                 p.X = e.X;
                 p.Y = e.Y;
                 Graphics paint;
-                paint = panel1.CreateGraphics();
-                if (shapes.Count != 0)
-                    shapes.RemoveRange(currShapesIndex + 1, shapes.Count - currShapesIndex - 1);
+                using (paint = panel1.CreateGraphics())
+                {
+                    if (shapes.Count != 0)
+                        shapes.RemoveRange(currShapesIndex + 1, shapes.Count - currShapesIndex - 1);
 
-                shapes.Add(selectedShape);
-                currShapesIndex++;
-                selectedShape.Draw(p, paint);
+                    shapes.Add(selectedShape);
+                    currShapesIndex++;
+                    selectedShape.Draw(p, paint);
+                }
+
+                ;
+               
                 selectedShape = null;
             }
         }
@@ -233,6 +241,7 @@ namespace WindowsFormsApp1
 
         private Shape shapeFromPlugin()
         {
+            // ДОРАБОТАТЬ! НЕ ПРОВЕРЯЕТСЯ ФОКУСИРОВКА НА КНОПКЕ
             Shape selectedShape = null;
             foreach (Control ctrl in groupBox3.Controls)
             {
@@ -253,6 +262,8 @@ namespace WindowsFormsApp1
                             break;
                     }
                 }
+                if (selectedShape != null)
+                    break;
             }
 
             return selectedShape;
@@ -304,6 +315,11 @@ namespace WindowsFormsApp1
                     AddButton(selectedShape);
                 }
             }
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
