@@ -80,31 +80,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EllipseShape.cs" />
-    <Compile Include="MainForm.cs">
+    <Compile Include="Shapes\EllipseShape.cs" />
+    <Compile Include="Forms\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainForm.Designer.cs">
+    <Compile Include="Forms\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Line.cs" />
-    <Compile Include="PluginSelectionForm.cs">
+    <Compile Include="Shapes\Line.cs" />
+    <Compile Include="Forms\PluginSelectionForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PluginSelectionForm.Designer.cs">
+    <Compile Include="Forms\PluginSelectionForm.Designer.cs">
       <DependentUpon>PluginSelectionForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="PolygonShape.cs" />
-    <Compile Include="PolylineShape.cs" />
+    <Compile Include="Shapes\PolygonShape.cs" />
+    <Compile Include="Shapes\PolylineShape.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RectangleShape.cs" />
-    <Compile Include="SerializableColor.cs" />
-    <Compile Include="Shape.cs" />
-    <EmbeddedResource Include="MainForm.resx">
+    <Compile Include="Shapes\RectangleShape.cs" />
+    <Compile Include="Serialization\SerializableColor.cs" />
+    <Compile Include="Models\Shape.cs" />
+    <EmbeddedResource Include="Forms\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PluginSelectionForm.resx">
+    <EmbeddedResource Include="Forms\PluginSelectionForm.resx">
       <DependentUpon>PluginSelectionForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -129,6 +129,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Plugins\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

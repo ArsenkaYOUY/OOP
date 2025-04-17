@@ -10,7 +10,6 @@ using System.Windows.Forms;
 using System.IO;
 using System.Text.Json;
 using System.Text.Json.Serialization;
-//using StarShapeLibrary;
 
 
 namespace WindowsFormsApp1
