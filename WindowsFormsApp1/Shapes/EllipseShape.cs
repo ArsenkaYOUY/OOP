@@ -12,11 +12,8 @@ namespace WindowsFormsApp1
     public class EllipseShape : Shape
     {
         public Rectangle rect { get; set; }
-        //public Brush brush { get; set; }
         public SerializableColor FillColor { get; set; }
-
         public EllipseShape() { }
-
         public EllipseShape(Color color, float width, Color fillColor) : base(color, width)
         {
             FillColor = new SerializableColor(fillColor);
