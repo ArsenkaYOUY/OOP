@@ -1,42 +1,23 @@
-﻿using System.Windows.Media;
-using System.Windows.Shapes;
-using Color = System.Drawing.Color;
+﻿using System.Windows.Shapes;
+using System.Drawing;
 
 namespace MyPaint;
 
-public class EllipseDefault : ShapeAllKinds
+public class PolygonDefault : ShapeAllKinds
 {
-    public double x1, y1, x2, y2;
-
-    public double X1
-    {
-        get { return x1; }
-        set { x1 = value; }
-    }
-
-    public double X2
-    {
-        get { return x2; }
-        set { x2 = value; }
-    }
-
-    public double Y1
-    {
-        get { return y1; }
-        set { y1 = value; }
-    }
-
-    public double Y2
-    {
-        get { return y2; }
-        set { y2 = value; }
-    }
+    
+    // Продумать как отрисовывать многоугольник
+    // 1) рисовать праввильный многоугольник 
+    // 2) Если чел держит shift, то добавлять новую вершину 
+    // ---- Чел нажал шифт --> добавление новой вершины
+    
+    public double[] points;
 
     public int strokeThickness;
 
     public int StrokeThickness
     {
-        get { return  strokeThickness; }
+        get { return strokeThickness; }
         set { strokeThickness = value; }
     }
 
@@ -55,7 +36,7 @@ public class EllipseDefault : ShapeAllKinds
     }
 
 
-    public override Path FigurePtr { get; set; }
+    public override Shape FigurePtr { get; set; }
 
     public override void UpdateData()
     {
@@ -66,6 +47,7 @@ public class EllipseDefault : ShapeAllKinds
     public override void Draw()
     {
         FigurePtr = new Path();
+        
         // функцию вывода EllipseGeometry
         // не забыть накинуть свойство, которое отменяет поверхностное нажатие
         // а то снова через костыли надо будет писать
