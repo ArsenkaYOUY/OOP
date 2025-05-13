@@ -67,7 +67,7 @@ namespace GraphicalEditor
 
         private void StartNewShape(Point pos)
         {
-            _currentShape = ShapeFactory.Instance.CreateShape(CurrentShapeType);
+            _currentShape = ShapeFactory.CreateShape(CurrentShapeType);
             ApplyDrawingSettings(_currentShape);
             _currentShape.Initialize(pos);
             _isDrawing = true;
