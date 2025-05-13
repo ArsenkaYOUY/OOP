@@ -36,7 +36,7 @@ namespace GraphicalEditor
 
         private void cnvDrawingArea_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            if (DrawingSettingsController == null) return;
+            if (DrawingSettingsController == null || CurrentShapeType == null) return;
             var pos = e.GetPosition(cnvDrawingArea);
 
             if (e.ChangedButton == MouseButton.Right && IsMultiClickShape && _isDrawing)

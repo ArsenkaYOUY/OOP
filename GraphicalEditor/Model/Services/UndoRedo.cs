@@ -33,6 +33,7 @@ namespace GraphicalEditor.Model.Services
 
         public void Reset()
         {
+            //late
             _undoStack.Clear();
             _redoStack.Clear();
         }
