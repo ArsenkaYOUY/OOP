@@ -1,0 +1,55 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Images\**" />
+    <Compile Remove="UI\**" />
+    <EmbeddedResource Remove="Images\**" />
+    <EmbeddedResource Remove="UI\**" />
+    <None Remove="Images\**" />
+    <None Remove="UI\**" />
+    <Page Remove="Images\**" />
+    <Page Remove="UI\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\CanvasController.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="View\Images\ellipse.png" />
+    <None Remove="View\Images\line.png" />
+    <None Remove="View\Images\plus.png" />
+    <None Remove="View\Images\polygon.png" />
+    <None Remove="View\Images\polyline.png" />
+    <None Remove="View\Images\rectangle.png" />
+    <None Remove="View\Images\redo.png" />
+    <None Remove="View\Images\undo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="View\Images\ellipse.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Extended.Wpf.Toolkit" Version="4.7.25104.5739" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="View\Images\line.png" />
+    <Resource Include="View\Images\plus.png" />
+    <Resource Include="View\Images\polygon.png" />
+    <Resource Include="View\Images\polyline.png" />
+    <Resource Include="View\Images\rectangle.png" />
+    <Resource Include="View\Images\redo.png" />
+    <Resource Include="View\Images\undo.png" />
+  </ItemGroup>
+
+</Project>

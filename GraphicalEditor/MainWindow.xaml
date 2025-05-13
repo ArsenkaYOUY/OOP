@@ -1,0 +1,107 @@
+﻿<Window x:Class="GraphicalEditor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        xmlns:local="clr-namespace:GraphicalEditor"
+        mc:Ignorable="d"
+        Title="Графический редактор" Height="800" Width="1200" ResizeMode="NoResize">
+
+
+    <Window.Resources>
+        <Style x:Key="ImageButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="BorderBrush" Value="Transparent"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Foreground" Value="Transparent"/>
+            <Setter Property="Padding" Value="0"/>
+            <Setter Property="Margin" Value="0"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <ContentPresenter/>
+                        <!-- Просто отображаем содержимое кнопки -->
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Opacity" Value="0.8"/>
+                </Trigger>
+                <Trigger Property="IsPressed" Value="True">
+                    <Setter Property="Opacity" Value="0.6"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+
+    <Grid Background="White" >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="600"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <local:MyCanvas x:Name="drawCanvas" Grid.ColumnSpan="2" Margin="80,71,250,0" Background="Transparent"/>
+        <StackPanel Grid.Column="1" Margin="350,50,0,0" Background="#999999">
+            <Separator Height="25" Visibility="Hidden" RenderTransformOrigin="0.499,-0.498"/>
+            <TextBlock Text="Цвет линии:" FontFamily="Arial" FontSize="18" Margin="0,0,0,5" Width="230"/>
+            <xctk:ColorPicker x:Name="LineColorPicker" SelectedColor="Black" SelectedColorChanged="LineColorPicker_SelectedColorChanged" Margin="0,0,0,10" Width="230"/>
+            <Separator Height="25" Visibility="Hidden" RenderTransformOrigin="0.499,-0.498"/>
+            <TextBlock Text="Цвет заливки:" FontFamily="Arial" FontSize="18" Margin="0,0,0,5" Width="230"/>
+            <xctk:ColorPicker x:Name="FillColorPicker" SelectedColorChanged="FillColorPicker_SelectedColorChanged" SelectedColor="White" Width="230"/>
+            <Separator Height="25" Visibility="Hidden" RenderTransformOrigin="0.499,-0.498"/>
+            <TextBlock Text="Толщина линии:" FontFamily="Arial" FontSize="18" Width="230"/>
+            <Slider Name="sldThickness" Minimum="1" Value="0" ValueChanged="sldThickness_ValueChanged" Maximum="10" Width="230" VerticalAlignment="Center" SmallChange="1"/>
+            <TextBox Name="tbxThickness" Text="{Binding Value, ElementName=sldThickness}" FontFamily="Arial" FontSize="18" Width="40" Margin="5,0"/>
+
+        </StackPanel>
+        <WrapPanel Margin="0,50,520,0" Background="#999999">
+            <Button Name="btnLine" Style="{StaticResource ImageButtonStyle}" Width="80" Height="55" Click="btnLine_Click">
+                <Image Source="View/Images/line.png" Width="54" Height="32"/>
+            </Button>
+            <Button Name="btnRectangle" Style="{StaticResource ImageButtonStyle}"  Width="80" Height="55" Click="btnRectangle_Click">
+                <Image Source="View/Images/rectangle.png" Width="64" Height="37"/>
+            </Button>
+            <Button Name="btnEllipse" Style="{StaticResource ImageButtonStyle}" Width="80" Height="55" Click="btnEllipse_Click">
+                <Image Source="View/Images/ellipse.png" Width="64" Height="37"/>
+            </Button>
+            <Button Name="btnPolyline" Style="{StaticResource ImageButtonStyle}" Width="80" Height="55" Click="btnPolyline_Click">
+                <Image Source="View/Images/polyline.png" Width="64" Height="37"/>
+            </Button>
+            <Button Name="btnPolygon" Style="{StaticResource ImageButtonStyle}" Width="80" Height="55" Click="btnPolygon_Click">
+                <Image Source="View/Images/polygon.png" Width="64" Height="37"/>
+            </Button>
+        </WrapPanel>
+        <Menu Grid.ColumnSpan="2" Background="#999999" BorderBrush="Black" Height="71" VerticalAlignment="Top">
+            <MenuItem Header="Файл" Height="47" Width="50" FontFamily="Arial" FontSize="16">
+                <MenuItem Header="Новый" 
+                  Command="{Binding NewCommand}"
+                  InputGestureText="Ctrl+N"/>
+                <MenuItem Header="Открыть..." 
+                  Command="{Binding OpenCommand}"
+                  InputGestureText="Ctrl+O"/>
+                <MenuItem Header="Сохранить" 
+                  Command="{Binding SaveCommand}"
+                  InputGestureText="Ctrl+S"/>
+                <MenuItem Header="Сохранить как..." 
+                  Command="{Binding SaveAsCommand}"/>
+                <Separator/>
+            </MenuItem>
+            <Separator Height="68" Visibility="Hidden" Width="31"/>
+            <Button Name="btnUndo" Style="{StaticResource ImageButtonStyle}" Height="40" Width="50" Click="btnUndo_Click">
+                <Image Source="View/Images/undo.png" Width="50" Height="35" RenderTransformOrigin="0.61,0.5"/>
+            </Button>
+            <Button Name="btnRedo" Style="{StaticResource ImageButtonStyle}" Height="40" Width="50" Click="btnRedo_Click">
+                <Image Source="View/Images/redo.png" Width="50" Height="35"/>
+            </Button>
+            <Separator Height="68"  Background="Black" Width="30"/>
+            <Button Name="btnAddPlugin" Style="{StaticResource ImageButtonStyle}" Height="50" Width="50">
+                <StackPanel Width="50" Orientation="Horizontal">
+                    <Image Source="View/Images/plus.png" Width="40" Height="40"/>
+                    <Separator Visibility="Hidden" Width="10"/>
+                </StackPanel>
+            </Button>
+        </Menu>
+    </Grid>
+</Window>
