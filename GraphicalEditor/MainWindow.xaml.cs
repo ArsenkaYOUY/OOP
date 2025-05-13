@@ -11,7 +11,7 @@ namespace GraphicalEditor
     {
         private readonly UndoRedoController _undoRedoController;
         private readonly DrawingSettingsController _drawingSettingsController = new DrawingSettingsController();
-
+//
         public MainWindow()
         {
             InitializeComponent();

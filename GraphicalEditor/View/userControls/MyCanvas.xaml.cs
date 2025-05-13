@@ -21,7 +21,7 @@ namespace GraphicalEditor
 
         public void SetUndoRedoController(UndoRedoController controller)
         {
-            _undoRedoController = controller;
+            _undoRedoController = controller; //
         }
 
         public MyCanvas()
