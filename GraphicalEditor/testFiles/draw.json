@@ -1,0 +1,3129 @@
+[
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 234.40000000000003,
+      "Y": 208.2
+    },
+    "End": {
+      "X": 234.40000000000003,
+      "Y": 208.2
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF000000",
+    "FillColor": "#FFFFFFFF",
+    "StrokeThickness": 1
+  },
+  {
+    "Type": "Ellipse",
+    "Center": {
+      "X": 286.40000000000003,
+      "Y": 245
+    },
+    "RadiusX": 219.2,
+    "RadiusY": 104.80000000000001,
+    "IsMultiClick": false,
+    "StrokeColor": "#FF000000",
+    "FillColor": "#FFFFFFFF",
+    "StrokeThickness": 1
+  },
+  {
+    "Type": "Ellipse",
+    "Center": {
+      "X": 447.20000000000005,
+      "Y": 371.40000000000003
+    },
+    "RadiusX": 754.4000000000001,
+    "RadiusY": 484,
+    "IsMultiClick": false,
+    "StrokeColor": "#FF000000",
+    "FillColor": "#FFFFFFFF",
+    "StrokeThickness": 1
+  },
+  {
+    "Type": "Ellipse",
+    "Center": {
+      "X": 221.60000000000002,
+      "Y": 282.6
+    },
+    "RadiusX": 3.1999999999999886,
+    "RadiusY": 51.19999999999999,
+    "IsMultiClick": false,
+    "StrokeColor": "#FF000000",
+    "FillColor": "#FF00CED1",
+    "StrokeThickness": 1
+  },
+  {
+    "Type": "Ellipse",
+    "Center": {
+      "X": 506.4,
+      "Y": 297
+    },
+    "RadiusX": 286.4,
+    "RadiusY": 0,
+    "IsMultiClick": false,
+    "StrokeColor": "#FF000000",
+    "FillColor": "#FF00CED1",
+    "StrokeThickness": 1
+  },
+  {
+    "Type": "Ellipse",
+    "Center": {
+      "X": 326.40000000000003,
+      "Y": 350.6
+    },
+    "RadiusX": 270.40000000000003,
+    "RadiusY": 53.60000000000002,
+    "IsMultiClick": false,
+    "StrokeColor": "#FF000000",
+    "FillColor": "#FF00CED1",
+    "StrokeThickness": 1
+  },
+  {
+    "Type": "Ellipse",
+    "Center": {
+      "X": 596.8000000000001,
+      "Y": 297
+    },
+    "RadiusX": 670.4000000000001,
+    "RadiusY": 19.200000000000045,
+    "IsMultiClick": false,
+    "StrokeColor": "#FF000000",
+    "FillColor": "#FF00CED1",
+    "StrokeThickness": 1
+  },
+  {
+    "Type": "Ellipse",
+    "Center": {
+      "X": 156.8,
+      "Y": 221.8
+    },
+    "RadiusX": 62.39999999999998,
+    "RadiusY": 61.60000000000002,
+    "IsMultiClick": false,
+    "StrokeColor": "#FF000000",
+    "FillColor": "#FF00CED1",
+    "StrokeThickness": 1
+  },
+  {
+    "Type": "Ellipse",
+    "Center": {
+      "X": 308,
+      "Y": 186.60000000000002
+    },
+    "RadiusX": 94.39999999999998,
+    "RadiusY": 92,
+    "IsMultiClick": false,
+    "StrokeColor": "#FF000000",
+    "FillColor": "#FF00CED1",
+    "StrokeThickness": 1
+  },
+  {
+    "Type": "Ellipse",
+    "Center": {
+      "X": 544,
+      "Y": 113.80000000000001
+    },
+    "RadiusX": 153.60000000000002,
+    "RadiusY": 164,
+    "IsMultiClick": false,
+    "StrokeColor": "#FF000000",
+    "FillColor": "#FF00CED1",
+    "StrokeThickness": 1
+  },
+  {
+    "Type": "Ellipse",
+    "Center": {
+      "X": 51.20000000000002,
+      "Y": 133
+    },
+    "RadiusX": 23.19999999999999,
+    "RadiusY": 23.200000000000017,
+    "IsMultiClick": false,
+    "StrokeColor": "#FF000000",
+    "FillColor": "#FF00CED1",
+    "StrokeThickness": 1
+  },
+  {
+    "Type": "Polyline",
+    "IsMultiClick": true,
+    "Points": [
+      {
+        "X": 39.2,
+        "Y": 152.20000000000002
+      },
+      {
+        "X": 40.80000000000001,
+        "Y": 179.4
+      }
+    ],
+    "StrokeColor": "#FF000000",
+    "FillColor": "#FF00CED1",
+    "StrokeThickness": 1
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 58.400000000000006,
+      "Y": 154.60000000000002
+    },
+    "End": {
+      "X": 58.400000000000006,
+      "Y": 154.60000000000002
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF000000",
+    "FillColor": "#FF00CED1",
+    "StrokeThickness": 1
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 61.599999999999994,
+      "Y": 153.8
+    },
+    "End": {
+      "X": 62.400000000000006,
+      "Y": 177.8
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF000000",
+    "FillColor": "#FF00CED1",
+    "StrokeThickness": 1
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 38.400000000000006,
+      "Y": 169
+    },
+    "End": {
+      "X": 13.600000000000009,
+      "Y": 193.8
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF000000",
+    "FillColor": "#FF00CED1",
+    "StrokeThickness": 1
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 63.20000000000002,
+      "Y": 167.4
+    },
+    "End": {
+      "X": 89.60000000000002,
+      "Y": 184.20000000000002
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF000000",
+    "FillColor": "#FF00CED1",
+    "StrokeThickness": 1
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 34.400000000000006,
+      "Y": 194.60000000000002
+    },
+    "End": {
+      "X": 34.400000000000006,
+      "Y": 232.2
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF000000",
+    "FillColor": "#FF00CED1",
+    "StrokeThickness": 1
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 64.80000000000001,
+      "Y": 192.2
+    },
+    "End": {
+      "X": 65.6,
+      "Y": 232.2
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF000000",
+    "FillColor": "#FF00CED1",
+    "StrokeThickness": 1
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 52,
+      "Y": 243.40000000000003
+    },
+    "End": {
+      "X": 34.400000000000006,
+      "Y": 278.6
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF000000",
+    "FillColor": "#FF00CED1",
+    "StrokeThickness": 1
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 54.400000000000006,
+      "Y": 245
+    },
+    "End": {
+      "X": 68,
+      "Y": 273
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF000000",
+    "FillColor": "#FF00CED1",
+    "StrokeThickness": 1
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 32.80000000000001,
+      "Y": 233
+    },
+    "End": {
+      "X": 12.800000000000011,
+      "Y": 268.20000000000005
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF000000",
+    "FillColor": "#FF00CED1",
+    "StrokeThickness": 1
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 64.80000000000001,
+      "Y": 230.60000000000002
+    },
+    "End": {
+      "X": 88,
+      "Y": 262.6
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF000000",
+    "FillColor": "#FF00CED1",
+    "StrokeThickness": 1
+  },
+  {
+    "Type": "Ellipse",
+    "Center": {
+      "X": 8.800000000000011,
+      "Y": 280.20000000000005
+    },
+    "RadiusX": 25.599999999999994,
+    "RadiusY": 11.200000000000045,
+    "IsMultiClick": false,
+    "StrokeColor": "#FF000000",
+    "FillColor": "#FF0000FF",
+    "StrokeThickness": 1
+  },
+  {
+    "Type": "Ellipse",
+    "Center": {
+      "X": 93.60000000000002,
+      "Y": 274.6
+    },
+    "RadiusX": 24.80000000000001,
+    "RadiusY": 10.399999999999977,
+    "IsMultiClick": false,
+    "StrokeColor": "#FF000000",
+    "FillColor": "#FF0000FF",
+    "StrokeThickness": 1
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 41.60000000000001,
+      "Y": 187.40000000000003
+    },
+    "End": {
+      "X": 10.400000000000006,
+      "Y": 222.60000000000002
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF000000",
+    "FillColor": "#FF0000FF",
+    "StrokeThickness": 1
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 59.20000000000002,
+      "Y": 185.8
+    },
+    "End": {
+      "X": 88.80000000000001,
+      "Y": 209.8
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF000000",
+    "FillColor": "#FF0000FF",
+    "StrokeThickness": 1
+  },
+  {
+    "Type": "Polyline",
+    "IsMultiClick": true,
+    "Points": [
+      {
+        "X": 89.60000000000002,
+        "Y": 184.20000000000002
+      },
+      {
+        "X": 102.4,
+        "Y": 181
+      },
+      {
+        "X": 96,
+        "Y": 192.2
+      },
+      {
+        "X": 107.20000000000002,
+        "Y": 195.40000000000003
+      },
+      {
+        "X": 94.4,
+        "Y": 201.8
+      },
+      {
+        "X": 100.80000000000001,
+        "Y": 207.40000000000003
+      },
+      {
+        "X": 88,
+        "Y": 207.40000000000003
+      },
+      {
+        "X": 88,
+        "Y": 208.2
+      }
+    ],
+    "StrokeColor": "#FF000000",
+    "FillColor": "#FF0000FF",
+    "StrokeThickness": 1
+  },
+  {
+    "Type": "Polyline",
+    "IsMultiClick": true,
+    "Points": [
+      {
+        "X": 14.400000000000006,
+        "Y": 192.2
+      },
+      {
+        "X": 2.4000000000000057,
+        "Y": 193.8
+      },
+      {
+        "X": 8,
+        "Y": 199.40000000000003
+      },
+      {
+        "X": 3.200000000000003,
+        "Y": 206.60000000000002
+      },
+      {
+        "X": 8.800000000000011,
+        "Y": 206.60000000000002
+      },
+      {
+        "X": 4.800000000000011,
+        "Y": 217.8
+      },
+      {
+        "X": 12.800000000000011,
+        "Y": 212.2
+      },
+      {
+        "X": 3.200000000000003,
+        "Y": 229
+      },
+      {
+        "X": 10.400000000000006,
+        "Y": 219.40000000000003
+      }
+    ],
+    "StrokeColor": "#FF000000",
+    "FillColor": "#FF0000FF",
+    "StrokeThickness": 1
+  },
+  {
+    "Type": "Ellipse",
+    "Center": {
+      "X": 60.80000000000001,
+      "Y": 131.4
+    },
+    "RadiusX": 3.200000000000017,
+    "RadiusY": 3.1999999999999886,
+    "IsMultiClick": false,
+    "StrokeColor": "#FF000000",
+    "FillColor": "#FF000000",
+    "StrokeThickness": 1
+  },
+  {
+    "Type": "Ellipse",
+    "Center": {
+      "X": 44.80000000000001,
+      "Y": 133.8
+    },
+    "RadiusX": 3.200000000000003,
+    "RadiusY": 4,
+    "IsMultiClick": false,
+    "StrokeColor": "#FF000000",
+    "FillColor": "#FF000000",
+    "StrokeThickness": 1
+  },
+  {
+    "Type": "Polyline",
+    "IsMultiClick": true,
+    "Points": [
+      {
+        "X": 85.60000000000002,
+        "Y": 275.40000000000003
+      },
+      {
+        "X": 91.20000000000002,
+        "Y": 281
+      },
+      {
+        "X": 103.20000000000002,
+        "Y": 269.8
+      }
+    ],
+    "StrokeColor": "#FF000000",
+    "FillColor": "#FF000000",
+    "StrokeThickness": 2.216438356164379
+  },
+  {
+    "Type": "Polyline",
+    "IsMultiClick": true,
+    "Points": [
+      {
+        "X": 16.80000000000001,
+        "Y": 281.8
+      },
+      {
+        "X": 8.800000000000011,
+        "Y": 288.20000000000005
+      },
+      {
+        "X": -0.7999999999999972,
+        "Y": 277
+      }
+    ],
+    "StrokeColor": "#FF000000",
+    "FillColor": "#FF000000",
+    "StrokeThickness": 2.216438356164379
+  },
+  {
+    "Type": "Rectangle",
+    "TopLeft": {
+      "X": 53.599999999999994,
+      "Y": 651.4000000000001
+    },
+    "BottomRight": {
+      "X": 933.6,
+      "Y": 299.40000000000003
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF000000",
+    "FillColor": "#FF00FFFF",
+    "StrokeThickness": 1
+  },
+  {
+    "Type": "Rectangle",
+    "TopLeft": {
+      "X": 868,
+      "Y": 299.40000000000003
+    },
+    "BottomRight": {
+      "X": -54.4,
+      "Y": 722.6
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF000000",
+    "FillColor": "#FF00FFFF",
+    "StrokeThickness": 1
+  },
+  {
+    "Type": "Ellipse",
+    "Center": {
+      "X": 88,
+      "Y": 583.4000000000001
+    },
+    "RadiusX": 997.6000000000001,
+    "RadiusY": 226.4000000000001,
+    "IsMultiClick": false,
+    "StrokeColor": "#FF000000",
+    "FillColor": "#FF0000FF",
+    "StrokeThickness": 1
+  },
+  {
+    "Type": "Ellipse",
+    "Center": {
+      "X": 552,
+      "Y": 523.4
+    },
+    "RadiusX": 524.8,
+    "RadiusY": 224.79999999999995,
+    "IsMultiClick": false,
+    "StrokeColor": "#FF000000",
+    "FillColor": "#FF0000FF",
+    "StrokeThickness": 1
+  },
+  {
+    "Type": "Ellipse",
+    "Center": {
+      "X": 696,
+      "Y": 390.6
+    },
+    "RadiusX": 273.60000000000014,
+    "RadiusY": 92,
+    "IsMultiClick": false,
+    "StrokeColor": "#FF000000",
+    "FillColor": "#FF0000FF",
+    "StrokeThickness": 1
+  },
+  {
+    "Type": "Ellipse",
+    "Center": {
+      "X": 800.8000000000001,
+      "Y": 333.8
+    },
+    "RadiusX": 123.19999999999993,
+    "RadiusY": 38.39999999999998,
+    "IsMultiClick": false,
+    "StrokeColor": "#FF000000",
+    "FillColor": "#FF0000FF",
+    "StrokeThickness": 1
+  },
+  {
+    "Type": "Ellipse",
+    "Center": {
+      "X": 853.6,
+      "Y": 314.6
+    },
+    "RadiusX": 51.200000000000045,
+    "RadiusY": 18.399999999999977,
+    "IsMultiClick": false,
+    "StrokeColor": "#FF000000",
+    "FillColor": "#FF0000FF",
+    "StrokeThickness": 1
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 52.80000000000001,
+      "Y": 109.80000000000001
+    },
+    "End": {
+      "X": 52.80000000000001,
+      "Y": 109.80000000000001
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF000000",
+    "FillColor": "#FF0000FF",
+    "StrokeThickness": 1.4931506849315062
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 54.400000000000006,
+      "Y": 112.20000000000002
+    },
+    "End": {
+      "X": 67.20000000000002,
+      "Y": 107.4
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FFFFEBCD",
+    "FillColor": "#FF0000FF",
+    "StrokeThickness": 3.6301369863013693
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 59.20000000000002,
+      "Y": 116.20000000000002
+    },
+    "End": {
+      "X": 68,
+      "Y": 111.4
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FFFFEBCD",
+    "FillColor": "#FF0000FF",
+    "StrokeThickness": 3.6301369863013693
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 65.6,
+      "Y": 116.20000000000002
+    },
+    "End": {
+      "X": 73.60000000000002,
+      "Y": 112.20000000000002
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FFFFEBCD",
+    "FillColor": "#FF0000FF",
+    "StrokeThickness": 3.6301369863013693
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 66.4,
+      "Y": 119.4
+    },
+    "End": {
+      "X": 66.4,
+      "Y": 112.20000000000002
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FFFFEBCD",
+    "FillColor": "#FF0000FF",
+    "StrokeThickness": 3.6301369863013693
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 62.400000000000006,
+      "Y": 118.60000000000002
+    },
+    "End": {
+      "X": 59.20000000000002,
+      "Y": 104.20000000000002
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FFFFEBCD",
+    "FillColor": "#FF0000FF",
+    "StrokeThickness": 3.6301369863013693
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 56,
+      "Y": 116.20000000000002
+    },
+    "End": {
+      "X": 51.20000000000002,
+      "Y": 102.60000000000002
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FFFFEBCD",
+    "FillColor": "#FF0000FF",
+    "StrokeThickness": 3.6301369863013693
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 51.20000000000002,
+      "Y": 114.60000000000002
+    },
+    "End": {
+      "X": 47.2,
+      "Y": 102.60000000000002
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FFFFEBCD",
+    "FillColor": "#FF0000FF",
+    "StrokeThickness": 3.6301369863013693
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 45.60000000000001,
+      "Y": 114.60000000000002
+    },
+    "End": {
+      "X": 39.2,
+      "Y": 104.20000000000002
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FFFFEBCD",
+    "FillColor": "#FF0000FF",
+    "StrokeThickness": 3.6301369863013693
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 43.2,
+      "Y": 115.4
+    },
+    "End": {
+      "X": 32.80000000000001,
+      "Y": 109.80000000000001
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FFFFEBCD",
+    "FillColor": "#FF0000FF",
+    "StrokeThickness": 3.6301369863013693
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 42.400000000000006,
+      "Y": 116.20000000000002
+    },
+    "End": {
+      "X": 25.60000000000001,
+      "Y": 115.4
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FFFFEBCD",
+    "FillColor": "#FF0000FF",
+    "StrokeThickness": 3.6301369863013693
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 34.400000000000006,
+      "Y": 117
+    },
+    "End": {
+      "X": 22.400000000000006,
+      "Y": 120.20000000000002
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FFFFEBCD",
+    "FillColor": "#FF0000FF",
+    "StrokeThickness": 3.6301369863013693
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 32,
+      "Y": 121.80000000000001
+    },
+    "End": {
+      "X": 26.400000000000006,
+      "Y": 125
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FFFFEBCD",
+    "FillColor": "#FF0000FF",
+    "StrokeThickness": 3.6301369863013693
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 36.80000000000001,
+      "Y": 118.60000000000002
+    },
+    "End": {
+      "X": 32,
+      "Y": 116.20000000000002
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FFFFEBCD",
+    "FillColor": "#FF0000FF",
+    "StrokeThickness": 3.6301369863013693
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 35.2,
+      "Y": 117.80000000000001
+    },
+    "End": {
+      "X": 32,
+      "Y": 107.4
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FFFFEBCD",
+    "FillColor": "#FF0000FF",
+    "StrokeThickness": 3.6301369863013693
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 40,
+      "Y": 118.60000000000002
+    },
+    "End": {
+      "X": 37.60000000000001,
+      "Y": 103.4
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FFFFEBCD",
+    "FillColor": "#FF0000FF",
+    "StrokeThickness": 3.6301369863013693
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 46.400000000000006,
+      "Y": 112.20000000000002
+    },
+    "End": {
+      "X": 49.599999999999994,
+      "Y": 105
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FFFFEBCD",
+    "FillColor": "#FF0000FF",
+    "StrokeThickness": 3.6301369863013693
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 51.20000000000002,
+      "Y": 114.60000000000002
+    },
+    "End": {
+      "X": 67.20000000000002,
+      "Y": 108.20000000000002
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FFFFEBCD",
+    "FillColor": "#FF0000FF",
+    "StrokeThickness": 3.6301369863013693
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 38.400000000000006,
+      "Y": 118.60000000000002
+    },
+    "End": {
+      "X": 22.400000000000006,
+      "Y": 122.60000000000002
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FFFFEBCD",
+    "FillColor": "#FF0000FF",
+    "StrokeThickness": 3.6301369863013693
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 43.2,
+      "Y": 118.60000000000002
+    },
+    "End": {
+      "X": 24.80000000000001,
+      "Y": 118.60000000000002
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FFFFEBCD",
+    "FillColor": "#FF0000FF",
+    "StrokeThickness": 3.6301369863013693
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 45.60000000000001,
+      "Y": 115.4
+    },
+    "End": {
+      "X": 31.200000000000003,
+      "Y": 109
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FFFFEBCD",
+    "FillColor": "#FF0000FF",
+    "StrokeThickness": 3.6301369863013693
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 48.80000000000001,
+      "Y": 115.4
+    },
+    "End": {
+      "X": 41.60000000000001,
+      "Y": 105.80000000000001
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FFFFEBCD",
+    "FillColor": "#FF0000FF",
+    "StrokeThickness": 3.6301369863013693
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 48.80000000000001,
+      "Y": 115.4
+    },
+    "End": {
+      "X": 46.400000000000006,
+      "Y": 105
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FFFFEBCD",
+    "FillColor": "#FF0000FF",
+    "StrokeThickness": 3.6301369863013693
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 52,
+      "Y": 114.60000000000002
+    },
+    "End": {
+      "X": 68,
+      "Y": 110.60000000000002
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FFFFEBCD",
+    "FillColor": "#FF0000FF",
+    "StrokeThickness": 3.6301369863013693
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 53.599999999999994,
+      "Y": 117
+    },
+    "End": {
+      "X": 66.4,
+      "Y": 115.4
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FFFFEBCD",
+    "FillColor": "#FF0000FF",
+    "StrokeThickness": 3.6301369863013693
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 51.20000000000002,
+      "Y": 116.20000000000002
+    },
+    "End": {
+      "X": 43.2,
+      "Y": 111.4
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FFFFEBCD",
+    "FillColor": "#FF0000FF",
+    "StrokeThickness": 3.6301369863013693
+  },
+  {
+    "Type": "Polyline",
+    "IsMultiClick": true,
+    "Points": [
+      {
+        "X": 42.400000000000006,
+        "Y": 146.60000000000002
+      },
+      {
+        "X": 53.599999999999994,
+        "Y": 149
+      },
+      {
+        "X": 64,
+        "Y": 143.4
+      },
+      {
+        "X": 52,
+        "Y": 150.60000000000002
+      }
+    ],
+    "StrokeColor": "#FFFFEBCD",
+    "FillColor": "#FF0000FF",
+    "StrokeThickness": 3.6301369863013693
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 52.80000000000001,
+      "Y": 139.4
+    },
+    "End": {
+      "X": 52.80000000000001,
+      "Y": 142.60000000000002
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FFFFEBCD",
+    "FillColor": "#FF0000FF",
+    "StrokeThickness": 3.6301369863013693
+  },
+  {
+    "Type": "Polyline",
+    "IsMultiClick": true,
+    "Points": [
+      {
+        "X": 38.400000000000006,
+        "Y": 164.20000000000002
+      },
+      {
+        "X": 51.20000000000002,
+        "Y": 174.60000000000002
+      },
+      {
+        "X": 63.20000000000002,
+        "Y": 165
+      }
+    ],
+    "StrokeColor": "#FF8A2BE2",
+    "FillColor": "#FF8A2BE2",
+    "StrokeThickness": 3.6301369863013693
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 15.200000000000003,
+      "Y": 191.40000000000003
+    },
+    "End": {
+      "X": 22.400000000000006,
+      "Y": 209.8
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF8A2BE2",
+    "FillColor": "#FF8A2BE2",
+    "StrokeThickness": 3.6301369863013693
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 85.60000000000002,
+      "Y": 182.60000000000002
+    },
+    "End": {
+      "X": 80,
+      "Y": 201.8
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF8A2BE2",
+    "FillColor": "#FF8A2BE2",
+    "StrokeThickness": 3.6301369863013693
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 16,
+      "Y": 262.6
+    },
+    "End": {
+      "X": 38.400000000000006,
+      "Y": 269
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF8A2BE2",
+    "FillColor": "#FF8A2BE2",
+    "StrokeThickness": 3.6301369863013693
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 61.599999999999994,
+      "Y": 262.6
+    },
+    "End": {
+      "X": 84,
+      "Y": 257
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF8A2BE2",
+    "FillColor": "#FF8A2BE2",
+    "StrokeThickness": 3.6301369863013693
+  },
+  {
+    "Type": "Rectangle",
+    "TopLeft": {
+      "X": 35.2,
+      "Y": 173
+    },
+    "BottomRight": {
+      "X": 64,
+      "Y": 242.60000000000002
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF8A2BE2",
+    "FillColor": "#FF8A2BE2",
+    "StrokeThickness": 3.6301369863013693
+  },
+  {
+    "Type": "Rectangle",
+    "TopLeft": {
+      "X": 24,
+      "Y": 205
+    },
+    "BottomRight": {
+      "X": 19.200000000000003,
+      "Y": 191.40000000000003
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF8A2BE2",
+    "FillColor": "#FF8A2BE2",
+    "StrokeThickness": 3.6301369863013693
+  },
+  {
+    "Type": "Ellipse",
+    "Center": {
+      "X": 67.20000000000002,
+      "Y": 182.60000000000002
+    },
+    "RadiusX": 15.199999999999989,
+    "RadiusY": 5.599999999999966,
+    "IsMultiClick": false,
+    "StrokeColor": "#FF8A2BE2",
+    "FillColor": "#FF8A2BE2",
+    "StrokeThickness": 3.6301369863013693
+  },
+  {
+    "Type": "Polygon",
+    "IsMultiClick": true,
+    "Points": [
+      {
+        "X": 29.60000000000001,
+        "Y": 249
+      },
+      {
+        "X": 43.2,
+        "Y": 221.8
+      },
+      {
+        "X": 36.80000000000001,
+        "Y": 265.8
+      },
+      {
+        "X": 20,
+        "Y": 260.20000000000005
+      },
+      {
+        "X": 36,
+        "Y": 230.60000000000002
+      },
+      {
+        "X": 52,
+        "Y": 229
+      },
+      {
+        "X": 63.20000000000002,
+        "Y": 213.8
+      },
+      {
+        "X": 50.400000000000006,
+        "Y": 195.40000000000003
+      },
+      {
+        "X": 35.2,
+        "Y": 243.40000000000003
+      },
+      {
+        "X": 50.400000000000006,
+        "Y": 230.60000000000002
+      }
+    ],
+    "StrokeColor": "#FF8A2BE2",
+    "FillColor": "#FF8A2BE2",
+    "StrokeThickness": 3.6301369863013693
+  },
+  {
+    "Type": "Polygon",
+    "IsMultiClick": true,
+    "Points": [
+      {
+        "X": 56,
+        "Y": 237.8
+      },
+      {
+        "X": 45.60000000000001,
+        "Y": 255.40000000000003
+      },
+      {
+        "X": 40.80000000000001,
+        "Y": 243.40000000000003
+      },
+      {
+        "X": 40,
+        "Y": 264.20000000000005
+      },
+      {
+        "X": 52,
+        "Y": 239.40000000000003
+      }
+    ],
+    "StrokeColor": "#FF8A2BE2",
+    "FillColor": "#FF8A2BE2",
+    "StrokeThickness": 3.6301369863013693
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 50.400000000000006,
+      "Y": 239.40000000000003
+    },
+    "End": {
+      "X": 40.80000000000001,
+      "Y": 251.40000000000003
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF8A2BE2",
+    "FillColor": "#FF8A2BE2",
+    "StrokeThickness": 3.6301369863013693
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 42.400000000000006,
+      "Y": 251.40000000000003
+    },
+    "End": {
+      "X": 49.599999999999994,
+      "Y": 227.40000000000003
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF8A2BE2",
+    "FillColor": "#FF8A2BE2",
+    "StrokeThickness": 3.6301369863013693
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 46.400000000000006,
+      "Y": 242.60000000000002
+    },
+    "End": {
+      "X": 37.60000000000001,
+      "Y": 251.40000000000003
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF8A2BE2",
+    "FillColor": "#FF8A2BE2",
+    "StrokeThickness": 3.6301369863013693
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 44.80000000000001,
+      "Y": 244.20000000000005
+    },
+    "End": {
+      "X": 40,
+      "Y": 252.20000000000005
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF8A2BE2",
+    "FillColor": "#FF8A2BE2",
+    "StrokeThickness": 3.6301369863013693
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 40,
+      "Y": 252.20000000000005
+    },
+    "End": {
+      "X": 44.80000000000001,
+      "Y": 249
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF8A2BE2",
+    "FillColor": "#FF8A2BE2",
+    "StrokeThickness": 3.6301369863013693
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 49.599999999999994,
+      "Y": 237.8
+    },
+    "End": {
+      "X": 63.20000000000002,
+      "Y": 261
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF8A2BE2",
+    "FillColor": "#FF8A2BE2",
+    "StrokeThickness": 3.6301369863013693
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 79.20000000000002,
+      "Y": 252.20000000000005
+    },
+    "End": {
+      "X": 59.20000000000002,
+      "Y": 226.60000000000002
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF8A2BE2",
+    "FillColor": "#FF8A2BE2",
+    "StrokeThickness": 3.6301369863013693
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 53.599999999999994,
+      "Y": 237.8
+    },
+    "End": {
+      "X": 68,
+      "Y": 262.6
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF8A2BE2",
+    "FillColor": "#FF8A2BE2",
+    "StrokeThickness": 3.6301369863013693
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 58.400000000000006,
+      "Y": 238.60000000000002
+    },
+    "End": {
+      "X": 68.80000000000001,
+      "Y": 260.20000000000005
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF8A2BE2",
+    "FillColor": "#FF8A2BE2",
+    "StrokeThickness": 3.6301369863013693
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 57.599999999999994,
+      "Y": 238.60000000000002
+    },
+    "End": {
+      "X": 73.60000000000002,
+      "Y": 260.20000000000005
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF8A2BE2",
+    "FillColor": "#FF8A2BE2",
+    "StrokeThickness": 3.6301369863013693
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 59.20000000000002,
+      "Y": 235.40000000000003
+    },
+    "End": {
+      "X": 74.4,
+      "Y": 259.40000000000003
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF8A2BE2",
+    "FillColor": "#FF8A2BE2",
+    "StrokeThickness": 3.6301369863013693
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 61.599999999999994,
+      "Y": 233.8
+    },
+    "End": {
+      "X": 76,
+      "Y": 259.40000000000003
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF8A2BE2",
+    "FillColor": "#FF8A2BE2",
+    "StrokeThickness": 3.6301369863013693
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 60.80000000000001,
+      "Y": 236.20000000000005
+    },
+    "End": {
+      "X": 76.80000000000001,
+      "Y": 257.8
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF8A2BE2",
+    "FillColor": "#FF8A2BE2",
+    "StrokeThickness": 3.6301369863013693
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 62.400000000000006,
+      "Y": 233
+    },
+    "End": {
+      "X": 80,
+      "Y": 257
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF8A2BE2",
+    "FillColor": "#FF8A2BE2",
+    "StrokeThickness": 3.6301369863013693
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 70.4,
+      "Y": 244.20000000000005
+    },
+    "End": {
+      "X": 81.60000000000002,
+      "Y": 256.20000000000005
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF8A2BE2",
+    "FillColor": "#FF8A2BE2",
+    "StrokeThickness": 3.6301369863013693
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 48.80000000000001,
+      "Y": 237
+    },
+    "End": {
+      "X": 70.4,
+      "Y": 257
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF8A2BE2",
+    "FillColor": "#FF8A2BE2",
+    "StrokeThickness": 3.6301369863013693
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 39.2,
+      "Y": 169
+    },
+    "End": {
+      "X": 16,
+      "Y": 193.8
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF8A2BE2",
+    "FillColor": "#FF8A2BE2",
+    "StrokeThickness": 3.6301369863013693
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 17.60000000000001,
+      "Y": 192.2
+    },
+    "End": {
+      "X": 39.2,
+      "Y": 173.8
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF8A2BE2",
+    "FillColor": "#FF8A2BE2",
+    "StrokeThickness": 3.6301369863013693
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 39.2,
+      "Y": 173.8
+    },
+    "End": {
+      "X": 20.80000000000001,
+      "Y": 191.40000000000003
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF8A2BE2",
+    "FillColor": "#FF8A2BE2",
+    "StrokeThickness": 3.6301369863013693
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 20.80000000000001,
+      "Y": 191.40000000000003
+    },
+    "End": {
+      "X": 41.60000000000001,
+      "Y": 178.60000000000002
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF8A2BE2",
+    "FillColor": "#FF8A2BE2",
+    "StrokeThickness": 3.6301369863013693
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 40.80000000000001,
+      "Y": 178.60000000000002
+    },
+    "End": {
+      "X": 23.200000000000003,
+      "Y": 197.8
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF8A2BE2",
+    "FillColor": "#FF8A2BE2",
+    "StrokeThickness": 3.6301369863013693
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 25.60000000000001,
+      "Y": 197
+    },
+    "End": {
+      "X": 32.80000000000001,
+      "Y": 181.8
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF8A2BE2",
+    "FillColor": "#FF8A2BE2",
+    "StrokeThickness": 3.6301369863013693
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 30.400000000000006,
+      "Y": 184.20000000000002
+    },
+    "End": {
+      "X": 31.200000000000003,
+      "Y": 192.2
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF8A2BE2",
+    "FillColor": "#FF8A2BE2",
+    "StrokeThickness": 3.6301369863013693
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 36.80000000000001,
+      "Y": 187.40000000000003
+    },
+    "End": {
+      "X": 23.200000000000003,
+      "Y": 205.8
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF8A2BE2",
+    "FillColor": "#FF8A2BE2",
+    "StrokeThickness": 3.6301369863013693
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 23.200000000000003,
+      "Y": 202.60000000000002
+    },
+    "End": {
+      "X": 36.80000000000001,
+      "Y": 183.4
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF8A2BE2",
+    "FillColor": "#FF8A2BE2",
+    "StrokeThickness": 3.6301369863013693
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 23.200000000000003,
+      "Y": 189.8
+    },
+    "End": {
+      "X": 27.200000000000003,
+      "Y": 190.60000000000002
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF8A2BE2",
+    "FillColor": "#FF8A2BE2",
+    "StrokeThickness": 3.6301369863013693
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 40.80000000000001,
+      "Y": 188.2
+    },
+    "End": {
+      "X": 25.60000000000001,
+      "Y": 203.40000000000003
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF8A2BE2",
+    "FillColor": "#FF8A2BE2",
+    "StrokeThickness": 3.6301369863013693
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 60.80000000000001,
+      "Y": 170.60000000000002
+    },
+    "End": {
+      "X": 84,
+      "Y": 182.60000000000002
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF8A2BE2",
+    "FillColor": "#FF8A2BE2",
+    "StrokeThickness": 3.6301369863013693
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 77.60000000000002,
+      "Y": 196.2
+    },
+    "End": {
+      "X": 63.20000000000002,
+      "Y": 184.20000000000002
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF8A2BE2",
+    "FillColor": "#FF8A2BE2",
+    "StrokeThickness": 3.6301369863013693
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 66.4,
+      "Y": 183.4
+    },
+    "End": {
+      "X": 79.20000000000002,
+      "Y": 199.40000000000003
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF8A2BE2",
+    "FillColor": "#FF8A2BE2",
+    "StrokeThickness": 3.6301369863013693
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 79.20000000000002,
+      "Y": 196.2
+    },
+    "End": {
+      "X": 69.6,
+      "Y": 181.8
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF8A2BE2",
+    "FillColor": "#FF8A2BE2",
+    "StrokeThickness": 3.6301369863013693
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 71.20000000000002,
+      "Y": 181.8
+    },
+    "End": {
+      "X": 81.60000000000002,
+      "Y": 189.8
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF8A2BE2",
+    "FillColor": "#FF8A2BE2",
+    "StrokeThickness": 3.6301369863013693
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 80,
+      "Y": 181.8
+    },
+    "End": {
+      "X": 77.60000000000002,
+      "Y": 194.60000000000002
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF8A2BE2",
+    "FillColor": "#FF8A2BE2",
+    "StrokeThickness": 3.6301369863013693
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 80.80000000000001,
+      "Y": 185
+    },
+    "End": {
+      "X": 80,
+      "Y": 193
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF8A2BE2",
+    "FillColor": "#FF8A2BE2",
+    "StrokeThickness": 3.6301369863013693
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 80,
+      "Y": 193
+    },
+    "End": {
+      "X": 76,
+      "Y": 198.60000000000002
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF8A2BE2",
+    "FillColor": "#FF8A2BE2",
+    "StrokeThickness": 3.6301369863013693
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 76,
+      "Y": 196.2
+    },
+    "End": {
+      "X": 60.80000000000001,
+      "Y": 188.2
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF8A2BE2",
+    "FillColor": "#FF8A2BE2",
+    "StrokeThickness": 3.6301369863013693
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 80.80000000000001,
+      "Y": 180.20000000000002
+    },
+    "End": {
+      "X": 60.80000000000001,
+      "Y": 169
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF8A2BE2",
+    "FillColor": "#FF8A2BE2",
+    "StrokeThickness": 3.6301369863013693
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 60.80000000000001,
+      "Y": 169
+    },
+    "End": {
+      "X": 57.599999999999994,
+      "Y": 174.60000000000002
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF8A2BE2",
+    "FillColor": "#FF8A2BE2",
+    "StrokeThickness": 3.6301369863013693
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 46.400000000000006,
+      "Y": 175.4
+    },
+    "End": {
+      "X": 40,
+      "Y": 168.20000000000002
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF8A2BE2",
+    "FillColor": "#FF8A2BE2",
+    "StrokeThickness": 3.6301369863013693
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 44.80000000000001,
+      "Y": 235.40000000000003
+    },
+    "End": {
+      "X": 44.80000000000001,
+      "Y": 252.20000000000005
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF8A2BE2",
+    "FillColor": "#FF8A2BE2",
+    "StrokeThickness": 3.6301369863013693
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 59.20000000000002,
+      "Y": 242.60000000000002
+    },
+    "End": {
+      "X": 68.80000000000001,
+      "Y": 255.40000000000003
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF8A2BE2",
+    "FillColor": "#FF8A2BE2",
+    "StrokeThickness": 3.6301369863013693
+  },
+  {
+    "Type": "Polyline",
+    "IsMultiClick": true,
+    "Points": [
+      {
+        "X": 37.60000000000001,
+        "Y": 167.4
+      },
+      {
+        "X": 52.80000000000001,
+        "Y": 178.60000000000002
+      },
+      {
+        "X": 64,
+        "Y": 165.8
+      },
+      {
+        "X": 48,
+        "Y": 179.4
+      },
+      {
+        "X": 38.400000000000006,
+        "Y": 169
+      }
+    ],
+    "StrokeColor": "#FFFF0000",
+    "FillColor": "#FFFF0000",
+    "StrokeThickness": 3.6301369863013693
+  },
+  {
+    "Type": "Ellipse",
+    "Center": {
+      "X": 50.400000000000006,
+      "Y": 197
+    },
+    "RadiusX": 1.5999999999999943,
+    "RadiusY": 2.3999999999999773,
+    "IsMultiClick": false,
+    "StrokeColor": "#FFFF0000",
+    "FillColor": "#FFFF0000",
+    "StrokeThickness": 3.6301369863013693
+  },
+  {
+    "Type": "Ellipse",
+    "Center": {
+      "X": 51.20000000000002,
+      "Y": 221
+    },
+    "RadiusX": 2.3999999999999773,
+    "RadiusY": 3.1999999999999886,
+    "IsMultiClick": false,
+    "StrokeColor": "#FFFF0000",
+    "FillColor": "#FFFF0000",
+    "StrokeThickness": 3.6301369863013693
+  },
+  {
+    "Type": "Ellipse",
+    "Center": {
+      "X": 98.4,
+      "Y": 83.4
+    },
+    "RadiusX": 21.599999999999994,
+    "RadiusY": 24,
+    "IsMultiClick": false,
+    "StrokeColor": "#FF000000",
+    "FillColor": "#FFFF0000",
+    "StrokeThickness": 1
+  },
+  {
+    "Type": "Polyline",
+    "IsMultiClick": true,
+    "Points": [
+      {
+        "X": 96.80000000000001,
+        "Y": 108.20000000000002
+      },
+      {
+        "X": 92,
+        "Y": 130.60000000000002
+      },
+      {
+        "X": 104.80000000000001,
+        "Y": 141.8
+      },
+      {
+        "X": 94.4,
+        "Y": 164.20000000000002
+      },
+      {
+        "X": 107.20000000000002,
+        "Y": 166.60000000000002
+      },
+      {
+        "X": 92.80000000000001,
+        "Y": 193
+      },
+      {
+        "X": 91.20000000000002,
+        "Y": 202.60000000000002
+      },
+      {
+        "X": 96,
+        "Y": 194.60000000000002
+      },
+      {
+        "X": 96.80000000000001,
+        "Y": 201
+      },
+      {
+        "X": 100,
+        "Y": 194.60000000000002
+      },
+      {
+        "X": 92.80000000000001,
+        "Y": 187.40000000000003
+      },
+      {
+        "X": 91.20000000000002,
+        "Y": 196.2
+      },
+      {
+        "X": 90.4,
+        "Y": 201
+      },
+      {
+        "X": 95.20000000000002,
+        "Y": 197
+      },
+      {
+        "X": 99.20000000000002,
+        "Y": 193.8
+      },
+      {
+        "X": 97.60000000000002,
+        "Y": 190.60000000000002
+      },
+      {
+        "X": 94.4,
+        "Y": 193.8
+      },
+      {
+        "X": 94.4,
+        "Y": 199.40000000000003
+      },
+      {
+        "X": 89.60000000000002,
+        "Y": 208.2
+      },
+      {
+        "X": 87.20000000000002,
+        "Y": 205.8
+      },
+      {
+        "X": 90.4,
+        "Y": 197
+      },
+      {
+        "X": 96,
+        "Y": 193
+      },
+      {
+        "X": 96,
+        "Y": 197.8
+      }
+    ],
+    "StrokeColor": "#FF000000",
+    "FillColor": "#FF000000",
+    "StrokeThickness": 1
+  },
+  {
+    "Type": "Ellipse",
+    "Center": {
+      "X": 826.4000000000001,
+      "Y": 16.200000000000003
+    },
+    "RadiusX": 100.79999999999995,
+    "RadiusY": 87.2,
+    "IsMultiClick": false,
+    "StrokeColor": "#FFFFFF00",
+    "FillColor": "#FFFFFF00",
+    "StrokeThickness": 1
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 724,
+      "Y": 17.80000000000001
+    },
+    "End": {
+      "X": 724,
+      "Y": 17.80000000000001
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FFFFFF00",
+    "FillColor": "#FFFFFF00",
+    "StrokeThickness": 1.361643835616436
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 723.2,
+      "Y": 22.60000000000001
+    },
+    "End": {
+      "X": 723.2,
+      "Y": 22.60000000000001
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FFFFFF00",
+    "FillColor": "#FFFFFF00",
+    "StrokeThickness": 1.361643835616436
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 728,
+      "Y": 36.2
+    },
+    "End": {
+      "X": 638.4000000000001,
+      "Y": 76.20000000000002
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FFFFFF00",
+    "FillColor": "#FFFFFF00",
+    "StrokeThickness": 1.361643835616436
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 748.8000000000001,
+      "Y": 71.4
+    },
+    "End": {
+      "X": 653.6,
+      "Y": 116.20000000000002
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FFFFFF00",
+    "FillColor": "#FFFFFF00",
+    "StrokeThickness": 1.361643835616436
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 802.4000000000001,
+      "Y": 76.20000000000002
+    },
+    "End": {
+      "X": 669.6,
+      "Y": 163.4
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FFFFFF00",
+    "FillColor": "#FFFFFF00",
+    "StrokeThickness": 1.361643835616436
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 826.4000000000001,
+      "Y": 78.6
+    },
+    "End": {
+      "X": 734.4000000000001,
+      "Y": 202.60000000000002
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FFFFFF00",
+    "FillColor": "#FFFFFF00",
+    "StrokeThickness": 1.361643835616436
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 837.6,
+      "Y": 83.4
+    },
+    "End": {
+      "X": 794.4000000000001,
+      "Y": 228.2
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FFFFFF00",
+    "FillColor": "#FFFFFF00",
+    "StrokeThickness": 1.361643835616436
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 853.6,
+      "Y": 73.80000000000001
+    },
+    "End": {
+      "X": 870.4000000000001,
+      "Y": 240.20000000000005
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FFFFFF00",
+    "FillColor": "#FFFFFF00",
+    "StrokeThickness": 1.361643835616436
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 748.8000000000001,
+      "Y": 8.200000000000003
+    },
+    "End": {
+      "X": 637.6,
+      "Y": 25
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FFFFFF00",
+    "FillColor": "#FFFFFF00",
+    "StrokeThickness": 1.361643835616436
+  },
+  {
+    "Type": "Rectangle",
+    "TopLeft": {
+      "X": 376.8,
+      "Y": 463.4
+    },
+    "BottomRight": {
+      "X": 689.6,
+      "Y": 669.8000000000001
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF000000",
+    "FillColor": "#FFA0522D",
+    "StrokeThickness": 1.361643835616436
+  },
+  {
+    "Type": "Polyline",
+    "IsMultiClick": true,
+    "Points": [
+      {
+        "X": 377.6,
+        "Y": 463.4
+      },
+      {
+        "X": 477.6,
+        "Y": 409.8
+      },
+      {
+        "X": 752.8000000000001,
+        "Y": 411.40000000000003
+      }
+    ],
+    "StrokeColor": "#FF000000",
+    "FillColor": "#FFA0522D",
+    "StrokeThickness": 1.361643835616436
+  },
+  {
+    "Type": "Polyline",
+    "IsMultiClick": true,
+    "Points": [
+      {
+        "X": 751.2,
+        "Y": 411.40000000000003
+      },
+      {
+        "X": 688.8000000000001,
+        "Y": 463.4
+      },
+      {
+        "X": 689.6,
+        "Y": 667.4000000000001
+      }
+    ],
+    "StrokeColor": "#FF000000",
+    "FillColor": "#FFA0522D",
+    "StrokeThickness": 1.361643835616436
+  },
+  {
+    "Type": "Polyline",
+    "IsMultiClick": true,
+    "Points": [
+      {
+        "X": 689.6,
+        "Y": 666.6
+      },
+      {
+        "X": 752.8000000000001,
+        "Y": 584.2
+      },
+      {
+        "X": 752,
+        "Y": 410.6
+      },
+      {
+        "X": 748.8000000000001,
+        "Y": 413.8
+      }
+    ],
+    "StrokeColor": "#FF000000",
+    "FillColor": "#FFA0522D",
+    "StrokeThickness": 1.361643835616436
+  },
+  {
+    "Type": "Triangle",
+    "IsMultiClick": true,
+    "Points": [
+      {
+        "X": 377.6,
+        "Y": 463.4
+      },
+      {
+        "X": 536,
+        "Y": 329
+      },
+      {
+        "X": 687.2,
+        "Y": 462.6
+      }
+    ],
+    "StrokeColor": "#FF000000",
+    "FillColor": "#FFA0522D",
+    "StrokeThickness": 1.361643835616436
+  },
+  {
+    "Type": "Triangle",
+    "IsMultiClick": true,
+    "Points": [
+      {
+        "X": 749.6,
+        "Y": 410.6
+      },
+      {
+        "X": 536,
+        "Y": 329
+      },
+      {
+        "X": 689.6,
+        "Y": 462.6
+      }
+    ],
+    "StrokeColor": "#FF000000",
+    "FillColor": "#FFA0522D",
+    "StrokeThickness": 1.361643835616436
+  },
+  {
+    "Type": "Rectangle",
+    "TopLeft": {
+      "X": 717.6,
+      "Y": 459.4
+    },
+    "BottomRight": {
+      "X": 750.4000000000001,
+      "Y": 581.8000000000001
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FFA0522D",
+    "FillColor": "#FFA0522D",
+    "StrokeThickness": 1.361643835616436
+  },
+  {
+    "Type": "Rectangle",
+    "TopLeft": {
+      "X": 690.4000000000001,
+      "Y": 464.20000000000005
+    },
+    "BottomRight": {
+      "X": 718.4000000000001,
+      "Y": 617.8000000000001
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FFA0522D",
+    "FillColor": "#FFA0522D",
+    "StrokeThickness": 1.361643835616436
+  },
+  {
+    "Type": "Rectangle",
+    "TopLeft": {
+      "X": 749.6,
+      "Y": 460.20000000000005
+    },
+    "BottomRight": {
+      "X": 732.8000000000001,
+      "Y": 429
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FFA0522D",
+    "FillColor": "#FFA0522D",
+    "StrokeThickness": 1.361643835616436
+  },
+  {
+    "Type": "Rectangle",
+    "TopLeft": {
+      "X": 696.8000000000001,
+      "Y": 484.20000000000005
+    },
+    "BottomRight": {
+      "X": 729.6,
+      "Y": 459.4
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FFA0522D",
+    "FillColor": "#FFA0522D",
+    "StrokeThickness": 1.361643835616436
+  },
+  {
+    "Type": "Rectangle",
+    "TopLeft": {
+      "X": 736,
+      "Y": 436.20000000000005
+    },
+    "BottomRight": {
+      "X": 723.2,
+      "Y": 462.6
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FFA0522D",
+    "FillColor": "#FFA0522D",
+    "StrokeThickness": 1.361643835616436
+  },
+  {
+    "Type": "Rectangle",
+    "TopLeft": {
+      "X": 704,
+      "Y": 461.80000000000007
+    },
+    "BottomRight": {
+      "X": 715.2,
+      "Y": 453.80000000000007
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FFA0522D",
+    "FillColor": "#FFA0522D",
+    "StrokeThickness": 1.361643835616436
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 731.2,
+      "Y": 433
+    },
+    "End": {
+      "X": 729.6,
+      "Y": 437.8
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FFA0522D",
+    "FillColor": "#FFA0522D",
+    "StrokeThickness": 10
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 720,
+      "Y": 449
+    },
+    "End": {
+      "X": 693.6,
+      "Y": 468.20000000000005
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FFA0522D",
+    "FillColor": "#FFA0522D",
+    "StrokeThickness": 10
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 698.4000000000001,
+      "Y": 645
+    },
+    "End": {
+      "X": 748.8000000000001,
+      "Y": 581
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FFA0522D",
+    "FillColor": "#FFA0522D",
+    "StrokeThickness": 10
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 742.4000000000001,
+      "Y": 578.6
+    },
+    "End": {
+      "X": 711.2,
+      "Y": 609.8000000000001
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FFA0522D",
+    "FillColor": "#FFA0522D",
+    "StrokeThickness": 10
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 723.2,
+      "Y": 567.4000000000001
+    },
+    "End": {
+      "X": 711.2,
+      "Y": 605.8000000000001
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FFA0522D",
+    "FillColor": "#FFA0522D",
+    "StrokeThickness": 10
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 724.8000000000001,
+      "Y": 577
+    },
+    "End": {
+      "X": 713.6,
+      "Y": 609
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FFA0522D",
+    "FillColor": "#FFA0522D",
+    "StrokeThickness": 10
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 733.6,
+      "Y": 575.4000000000001
+    },
+    "End": {
+      "X": 707.2,
+      "Y": 623.4000000000001
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FFA0522D",
+    "FillColor": "#FFA0522D",
+    "StrokeThickness": 10
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 700,
+      "Y": 594.6
+    },
+    "End": {
+      "X": 696,
+      "Y": 644.2
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FFA0522D",
+    "FillColor": "#FFA0522D",
+    "StrokeThickness": 10
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 707.2,
+      "Y": 611.4000000000001
+    },
+    "End": {
+      "X": 695.2,
+      "Y": 648.2
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FFA0522D",
+    "FillColor": "#FFA0522D",
+    "StrokeThickness": 10
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 726.4000000000001,
+      "Y": 446.6
+    },
+    "End": {
+      "X": 709.6,
+      "Y": 465.80000000000007
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FFA0522D",
+    "FillColor": "#FFA0522D",
+    "StrokeThickness": 10
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 732,
+      "Y": 436.20000000000005
+    },
+    "End": {
+      "X": 695.2,
+      "Y": 465.80000000000007
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FFA0522D",
+    "FillColor": "#FFA0522D",
+    "StrokeThickness": 10
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 747.2,
+      "Y": 420.20000000000005
+    },
+    "End": {
+      "X": 695.2,
+      "Y": 469
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FFA0522D",
+    "FillColor": "#FFA0522D",
+    "StrokeThickness": 10
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 748,
+      "Y": 419.40000000000003
+    },
+    "End": {
+      "X": 747.2,
+      "Y": 455.4
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FFA0522D",
+    "FillColor": "#FFA0522D",
+    "StrokeThickness": 10
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 749.6,
+      "Y": 415.40000000000003
+    },
+    "End": {
+      "X": 706.4000000000001,
+      "Y": 461
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FFA0522D",
+    "FillColor": "#FFA0522D",
+    "StrokeThickness": 10
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 729.6,
+      "Y": 587.4000000000001
+    },
+    "End": {
+      "X": 705.6,
+      "Y": 625
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FFA0522D",
+    "FillColor": "#FFA0522D",
+    "StrokeThickness": 10
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 694.4000000000001,
+      "Y": 612.2
+    },
+    "End": {
+      "X": 693.6,
+      "Y": 666.6
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FFA0522D",
+    "FillColor": "#FFA0522D",
+    "StrokeThickness": 10
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 703.2,
+      "Y": 635.4000000000001
+    },
+    "End": {
+      "X": 696,
+      "Y": 654.6
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FFA0522D",
+    "FillColor": "#FFA0522D",
+    "StrokeThickness": 10
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 749.6,
+      "Y": 465
+    },
+    "End": {
+      "X": 748.8000000000001,
+      "Y": 413
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FFA0522D",
+    "FillColor": "#FFA0522D",
+    "StrokeThickness": 10
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 748.8000000000001,
+      "Y": 413
+    },
+    "End": {
+      "X": 694.4000000000001,
+      "Y": 468.20000000000005
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FFA0522D",
+    "FillColor": "#FFA0522D",
+    "StrokeThickness": 10
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 694.4000000000001,
+      "Y": 468.20000000000005
+    },
+    "End": {
+      "X": 696.8000000000001,
+      "Y": 468.20000000000005
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FFA0522D",
+    "FillColor": "#FFA0522D",
+    "StrokeThickness": 10
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 750.4000000000001,
+      "Y": 411.40000000000003
+    },
+    "End": {
+      "X": 752,
+      "Y": 477.80000000000007
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF000000",
+    "FillColor": "#FFA0522D",
+    "StrokeThickness": 1
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 751.2,
+      "Y": 413.8
+    },
+    "End": {
+      "X": 751.2,
+      "Y": 584.2
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF000000",
+    "FillColor": "#FFA0522D",
+    "StrokeThickness": 3.8931506849315105
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 751.2,
+      "Y": 583.4000000000001
+    },
+    "End": {
+      "X": 689.6,
+      "Y": 667.4000000000001
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF000000",
+    "FillColor": "#FFA0522D",
+    "StrokeThickness": 3.8931506849315105
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 689.6,
+      "Y": 667.4000000000001
+    },
+    "End": {
+      "X": 689.6,
+      "Y": 667.4000000000001
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF000000",
+    "FillColor": "#FFA0522D",
+    "StrokeThickness": 3.8931506849315105
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 688,
+      "Y": 462.6
+    },
+    "End": {
+      "X": 688,
+      "Y": 669.8000000000001
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF000000",
+    "FillColor": "#FFA0522D",
+    "StrokeThickness": 3.8931506849315105
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 684.8000000000001,
+      "Y": 463.4
+    },
+    "End": {
+      "X": 749.6,
+      "Y": 411.40000000000003
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF000000",
+    "FillColor": "#FFA0522D",
+    "StrokeThickness": 3.8931506849315105
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 733.6,
+      "Y": 645.8000000000001
+    },
+    "End": {
+      "X": 705.6,
+      "Y": 673.8000000000001
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF0000FF",
+    "FillColor": "#FFA0522D",
+    "StrokeThickness": 3.8931506849315105
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 707.2,
+      "Y": 651.4000000000001
+    },
+    "End": {
+      "X": 689.6,
+      "Y": 679.4000000000001
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF0000FF",
+    "FillColor": "#FFA0522D",
+    "StrokeThickness": 3.8931506849315105
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 708.8000000000001,
+      "Y": 650.6
+    },
+    "End": {
+      "X": 688.8000000000001,
+      "Y": 673.8000000000001
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF0000FF",
+    "FillColor": "#FFA0522D",
+    "StrokeThickness": 3.8931506849315105
+  },
+  {
+    "Type": "Rectangle",
+    "TopLeft": {
+      "X": 497.6,
+      "Y": 525
+    },
+    "BottomRight": {
+      "X": 588,
+      "Y": 606.6
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FFF0F8FF",
+    "FillColor": "#FFF0F8FF",
+    "StrokeThickness": 3.8931506849315105
+  },
+  {
+    "Type": "Triangle",
+    "IsMultiClick": true,
+    "Points": [
+      {
+        "X": 493.6,
+        "Y": 431.40000000000003
+      },
+      {
+        "X": 534.4000000000001,
+        "Y": 385.8
+      },
+      {
+        "X": 579.2,
+        "Y": 429.8
+      }
+    ],
+    "StrokeColor": "#FFF0F8FF",
+    "FillColor": "#FFF0F8FF",
+    "StrokeThickness": 3.8931506849315105
+  },
+  {
+    "Type": "Triangle",
+    "IsMultiClick": true,
+    "Points": [
+      {
+        "X": 684.8000000000001,
+        "Y": 437.8
+      },
+      {
+        "X": 646.4000000000001,
+        "Y": 393.8
+      },
+      {
+        "X": 716,
+        "Y": 414.6
+      }
+    ],
+    "StrokeColor": "#FFF0F8FF",
+    "FillColor": "#FFF0F8FF",
+    "StrokeThickness": 3.8931506849315105
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 543.2,
+      "Y": 607.4000000000001
+    },
+    "End": {
+      "X": 542.4000000000001,
+      "Y": 523.4
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF000000",
+    "FillColor": "#FFF0F8FF",
+    "StrokeThickness": 2.808219178082191
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 495.20000000000005,
+      "Y": 561
+    },
+    "End": {
+      "X": 588.8000000000001,
+      "Y": 561.8000000000001
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF000000",
+    "FillColor": "#FFF0F8FF",
+    "StrokeThickness": 2.808219178082191
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 514.4,
+      "Y": 405.8
+    },
+    "End": {
+      "X": 535.2,
+      "Y": 415.40000000000003
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF000000",
+    "FillColor": "#FFF0F8FF",
+    "StrokeThickness": 2.808219178082191
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 535.2,
+      "Y": 415.40000000000003
+    },
+    "End": {
+      "X": 553.6,
+      "Y": 403.40000000000003
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF000000",
+    "FillColor": "#FFF0F8FF",
+    "StrokeThickness": 2.808219178082191
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 534.4000000000001,
+      "Y": 413.8
+    },
+    "End": {
+      "X": 535.2,
+      "Y": 433
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF000000",
+    "FillColor": "#FFF0F8FF",
+    "StrokeThickness": 2.808219178082191
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 663.2,
+      "Y": 416.20000000000005
+    },
+    "End": {
+      "X": 686.4000000000001,
+      "Y": 417
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF000000",
+    "FillColor": "#FFF0F8FF",
+    "StrokeThickness": 2.808219178082191
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 686.4000000000001,
+      "Y": 417
+    },
+    "End": {
+      "X": 679.2,
+      "Y": 403.40000000000003
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF000000",
+    "FillColor": "#FFF0F8FF",
+    "StrokeThickness": 2.808219178082191
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 685.6,
+      "Y": 413.8
+    },
+    "End": {
+      "X": 700.8000000000001,
+      "Y": 426.6
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF000000",
+    "FillColor": "#FFF0F8FF",
+    "StrokeThickness": 2.808219178082191
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 536.8000000000001,
+      "Y": 329
+    },
+    "End": {
+      "X": 376.8,
+      "Y": 464.20000000000005
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF000000",
+    "FillColor": "#FFF0F8FF",
+    "StrokeThickness": 2.808219178082191
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 377.6,
+      "Y": 464.20000000000005
+    },
+    "End": {
+      "X": 376.8,
+      "Y": 668.2
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF000000",
+    "FillColor": "#FFF0F8FF",
+    "StrokeThickness": 2.808219178082191
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 377.6,
+      "Y": 666.6
+    },
+    "End": {
+      "X": 684.8000000000001,
+      "Y": 667.4000000000001
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF000000",
+    "FillColor": "#FFF0F8FF",
+    "StrokeThickness": 2.808219178082191
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 684.8000000000001,
+      "Y": 667.4000000000001
+    },
+    "End": {
+      "X": 375.20000000000005,
+      "Y": 668.2
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF000000",
+    "FillColor": "#FFF0F8FF",
+    "StrokeThickness": 2.808219178082191
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 375.20000000000005,
+      "Y": 668.2
+    },
+    "End": {
+      "X": 375.20000000000005,
+      "Y": 668.2
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF000000",
+    "FillColor": "#FFF0F8FF",
+    "StrokeThickness": 2.808219178082191
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 375.20000000000005,
+      "Y": 463.4
+    },
+    "End": {
+      "X": 687.2,
+      "Y": 462.6
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF000000",
+    "FillColor": "#FFF0F8FF",
+    "StrokeThickness": 2.808219178082191
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 687.2,
+      "Y": 462.6
+    },
+    "End": {
+      "X": 536,
+      "Y": 329.8
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF000000",
+    "FillColor": "#FFF0F8FF",
+    "StrokeThickness": 2.808219178082191
+  },
+  {
+    "Type": "Line",
+    "Start": {
+      "X": 536,
+      "Y": 329.8
+    },
+    "End": {
+      "X": 749.6,
+      "Y": 409.8
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF000000",
+    "FillColor": "#FFF0F8FF",
+    "StrokeThickness": 2.808219178082191
+  }
+]

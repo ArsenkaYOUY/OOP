@@ -29,10 +29,8 @@ namespace GraphicalEditor
 
             drawCanvas.SetUndoRedoController(_undoRedoController);
             drawCanvas.DrawingSettingsController = _drawingSettingsController;
-            
-            //_pluginLoaderController = new PluginLoaderController(
-            //    ShapeFactory.Instance,
-            //    (WrapPanel)FindName("toolbarPanel")
+
+            _pluginLoaderController = new PluginLoaderController(ShapeFactory.Instance, (WrapPanel)FindName("toolbarPanel"));
         }
 
         private void btnLine_Click(object sender, RoutedEventArgs e) => drawCanvas.CurrentShapeType = "Line";
@@ -102,7 +100,7 @@ namespace GraphicalEditor
         }
         private void btnAddPlugin_Click(object sender, RoutedEventArgs e)
         {
-            //_pluginLoaderController.LoadPlugin();
+            _pluginLoaderController.LoadPlugin();
         }
     }
 }
