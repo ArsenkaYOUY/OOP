@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using GraphicalEditor.Model.Commands;
 
-namespace GraphicalEditor.Model.Services
+namespace GraphicalEditor.Services
 {
     public class UndoRedoService
     {
@@ -33,7 +33,6 @@ namespace GraphicalEditor.Model.Services
 
         public void Reset()
         {
-            //late
             _undoStack.Clear();
             _redoStack.Clear();
         }

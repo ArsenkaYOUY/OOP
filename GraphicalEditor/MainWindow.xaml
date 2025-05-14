@@ -58,19 +58,19 @@
         </StackPanel>
         <WrapPanel Margin="0,50,520,0" Background="#999999">
             <Button Name="btnLine" Style="{StaticResource ImageButtonStyle}" Width="80" Height="55" Click="btnLine_Click">
-                <Image Source="View/Images/line.png" Width="54" Height="32"/>
+                <Image Source="Resources/Images/line.png" Width="54" Height="32"/>
             </Button>
             <Button Name="btnRectangle" Style="{StaticResource ImageButtonStyle}"  Width="80" Height="55" Click="btnRectangle_Click">
-                <Image Source="View/Images/rectangle.png" Width="64" Height="37"/>
+                <Image Source="Resources/Images/rectangle.png" Width="64" Height="37"/>
             </Button>
             <Button Name="btnEllipse" Style="{StaticResource ImageButtonStyle}" Width="80" Height="55" Click="btnEllipse_Click">
-                <Image Source="View/Images/ellipse.png" Width="64" Height="37"/>
+                <Image Source="Resources/Images/ellipse.png" Width="64" Height="37"/>
             </Button>
             <Button Name="btnPolyline" Style="{StaticResource ImageButtonStyle}" Width="80" Height="55" Click="btnPolyline_Click">
-                <Image Source="View/Images/polyline.png" Width="64" Height="37"/>
+                <Image Source="Resources/Images/polyline.png" Width="64" Height="37"/>
             </Button>
             <Button Name="btnPolygon" Style="{StaticResource ImageButtonStyle}" Width="80" Height="55" Click="btnPolygon_Click">
-                <Image Source="View/Images/polygon.png" Width="64" Height="37"/>
+                <Image Source="Resources/Images/polygon.png" Width="64" Height="37"/>
             </Button>
         </WrapPanel>
         <Menu Grid.ColumnSpan="2" Background="#999999" BorderBrush="Black" Height="71" VerticalAlignment="Top">
@@ -90,15 +90,15 @@
             </MenuItem>
             <Separator Height="68" Visibility="Hidden" Width="31"/>
             <Button Name="btnUndo" Style="{StaticResource ImageButtonStyle}" Height="40" Width="50" Click="btnUndo_Click">
-                <Image Source="View/Images/undo.png" Width="50" Height="35" RenderTransformOrigin="0.61,0.5"/>
+                <Image Source="Resources/Images/undo.png" Width="50" Height="35" RenderTransformOrigin="0.61,0.5"/>
             </Button>
             <Button Name="btnRedo" Style="{StaticResource ImageButtonStyle}" Height="40" Width="50" Click="btnRedo_Click">
-                <Image Source="View/Images/redo.png" Width="50" Height="35"/>
+                <Image Source="Resources/Images/redo.png" Width="50" Height="35"/>
             </Button>
             <Separator Height="68"  Background="Black" Width="30"/>
             <Button Name="btnAddPlugin" Style="{StaticResource ImageButtonStyle}" Height="50" Width="50">
                 <StackPanel Width="50" Orientation="Horizontal">
-                    <Image Source="View/Images/plus.png" Width="40" Height="40"/>
+                    <Image Source="pack://application:,,,/Resources/Images/plus.png" Width="40" Height="40"/>
                     <Separator Visibility="Hidden" Width="10"/>
                 </StackPanel>
             </Button>

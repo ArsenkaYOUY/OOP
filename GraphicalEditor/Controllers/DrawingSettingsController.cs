@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using GraphicalEditor.Model.Services;
 using System.Windows.Media;
+using GraphicalEditor.Services;
 
 namespace GraphicalEditor.Controllers
 {

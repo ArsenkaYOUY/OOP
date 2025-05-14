@@ -1,6 +1,5 @@
-﻿using GraphicalEditor.Model.Services;
-using GraphicalEditor.Model.Commands;
-
+﻿using GraphicalEditor.Model.Commands;
+using GraphicalEditor.Services;
 
 namespace GraphicalEditor.Controllers
 {

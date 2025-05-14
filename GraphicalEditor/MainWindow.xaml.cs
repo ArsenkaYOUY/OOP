@@ -1,5 +1,5 @@
 ﻿using GraphicalEditor.Controllers;
-using GraphicalEditor.Model.Services;
+using GraphicalEditor.Services;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;

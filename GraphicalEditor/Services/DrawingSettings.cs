@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Media;
 
-namespace GraphicalEditor.Model.Services
+namespace GraphicalEditor.Services
 {
     public class DrawingSettings
     {
