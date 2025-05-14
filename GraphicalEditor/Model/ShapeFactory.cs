@@ -6,10 +6,12 @@ using System.Threading.Tasks;
 
 namespace GraphicalEditor.Model.Shapes
 {
-    public static class ShapeFactory
+    public class ShapeFactory
     {
-        private static readonly Dictionary<string, Func<ShapeBase>> _factories = new Dictionary<string, Func<ShapeBase>>();
-        static ShapeFactory()
+        private static ShapeFactory? _instance;
+        public static ShapeFactory Instance => _instance ??= new ShapeFactory();
+        private readonly Dictionary<string, Func<ShapeBase>> _factories = new Dictionary<string, Func<ShapeBase>>();
+        private ShapeFactory()
         {
             _factories["Line"] = () => new LineShape();
             _factories["Rectangle"] = () => new RectangleShape();
@@ -17,16 +19,25 @@ namespace GraphicalEditor.Model.Shapes
             _factories["Polyline"] = () => new PolylineShape();
             _factories["Polygon"] = () => new PolygonShape();
         }
-        public static ShapeBase CreateShape(string shapeType)
+        public ShapeBase CreateShape(string shapeType)
         {
             if (_factories.ContainsKey(shapeType))
                 return _factories[shapeType]();
             throw new ArgumentException("Unknown shape type", nameof(shapeType));
         }
-        public static void RegisterShape(string shapeType, Func<ShapeBase> factoryMethod)
+        public void RegisterShape(string shapeType, Func<ShapeBase> factoryMethod)
         {
             if (!_factories.ContainsKey(shapeType))
                 _factories.Add(shapeType, factoryMethod);
+        }
+        public IDictionary<string, Type> RegisteredTypes()
+        {
+            var dict = new Dictionary<string, Type>(StringComparer.OrdinalIgnoreCase);
+            foreach (var kv in _factories)
+            {
+                dict[kv.Key] = kv.Value().GetType();
+            }
+            return dict;
         }
     }
 }

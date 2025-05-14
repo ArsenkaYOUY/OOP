@@ -56,7 +56,7 @@
             <TextBox Name="tbxThickness" Text="{Binding Value, ElementName=sldThickness}" FontFamily="Arial" FontSize="18" Width="40" Margin="5,0"/>
 
         </StackPanel>
-        <WrapPanel Margin="0,50,520,0" Background="#999999">
+        <WrapPanel Name="toolbarPanel" Margin="0,50,520,0" Background="#999999">
             <Button Name="btnLine" Style="{StaticResource ImageButtonStyle}" Width="80" Height="55" Click="btnLine_Click">
                 <Image Source="Resources/Images/line.png" Width="54" Height="32"/>
             </Button>
@@ -75,17 +75,10 @@
         </WrapPanel>
         <Menu Grid.ColumnSpan="2" Background="#999999" BorderBrush="Black" Height="71" VerticalAlignment="Top">
             <MenuItem Header="Файл" Height="47" Width="50" FontFamily="Arial" FontSize="16">
-                <MenuItem Header="Новый" 
-                  Command="{Binding NewCommand}"
-                  InputGestureText="Ctrl+N"/>
-                <MenuItem Header="Открыть..." 
-                  Command="{Binding OpenCommand}"
-                  InputGestureText="Ctrl+O"/>
-                <MenuItem Header="Сохранить" 
-                  Command="{Binding SaveCommand}"
-                  InputGestureText="Ctrl+S"/>
-                <MenuItem Header="Сохранить как..." 
-                  Command="{Binding SaveAsCommand}"/>
+                <MenuItem Header="Новый"       Click="File_New_Click"/>
+                <MenuItem Header="Открыть..."  Click="File_Open_Click"/>
+                <MenuItem Header="Сохранить"   Click="File_Save_Click"/>
+                <MenuItem Header="Сохранить как..." Click="File_SaveAs_Click"/>
                 <Separator/>
             </MenuItem>
             <Separator Height="68" Visibility="Hidden" Width="31"/>
@@ -96,7 +89,7 @@
                 <Image Source="Resources/Images/redo.png" Width="50" Height="35"/>
             </Button>
             <Separator Height="68"  Background="Black" Width="30"/>
-            <Button Name="btnAddPlugin" Style="{StaticResource ImageButtonStyle}" Height="50" Width="50">
+            <Button Name="btnAddPlugin" Click="btnAddPlugin_Click"  Style="{StaticResource ImageButtonStyle}" Height="50" Width="50">
                 <StackPanel Width="50" Orientation="Horizontal">
                     <Image Source="pack://application:,,,/Resources/Images/plus.png" Width="40" Height="40"/>
                     <Separator Visibility="Hidden" Width="10"/>
