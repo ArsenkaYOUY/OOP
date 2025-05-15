@@ -12,8 +12,14 @@ namespace GraphicalEditor.Controllers
     public class SerializationController
     {
         private readonly Serializer _serializer = new();
-        private string _currentPath;
+        private readonly UndoRedoController _undoRedoController;
 
+        public SerializationController(UndoRedoController undoRedoController)
+        {
+            _undoRedoController = undoRedoController;
+        }
+
+        private string _currentPath;
         public bool HasCurrentFile => !string.IsNullOrEmpty(_currentPath);
         public string CurrentFileName
             => HasCurrentFile ? Path.GetFileName(_currentPath) : null;
@@ -22,6 +28,7 @@ namespace GraphicalEditor.Controllers
         {
             shapes.Clear();
             _currentPath = null;
+            _undoRedoController.Reset();
         }
 
         public List<ShapeBase> Open(string path)
@@ -29,7 +36,9 @@ namespace GraphicalEditor.Controllers
             _currentPath = path;
             try
             {
-                return _serializer.Load(path);
+                var shapes = _serializer.Load(path);
+                _undoRedoController.Reset(); // Очищаем историю перед загрузкой
+                return shapes;
             }
             catch (JsonException ex)
             {

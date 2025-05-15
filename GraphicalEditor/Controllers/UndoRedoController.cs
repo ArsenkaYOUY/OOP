@@ -31,5 +31,10 @@ namespace GraphicalEditor.Controllers
             _service.Redo();
             _canvas.InvalidateVisual();
         }
+        public void Reset()
+        {
+            _service.Reset();
+            _canvas.InvalidateVisual();
+        }
     }
 }

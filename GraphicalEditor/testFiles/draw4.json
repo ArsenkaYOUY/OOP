@@ -1,0 +1,62 @@
+[
+  {
+    "Type": "Rectangle",
+    "TopLeft": {
+      "X": 254.40000000000003,
+      "Y": 157
+    },
+    "BottomRight": {
+      "X": 512.8000000000001,
+      "Y": 335.40000000000003
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF000000",
+    "FillColor": "#FFFFFFFF",
+    "StrokeThickness": 1
+  },
+  {
+    "Type": "Rectangle",
+    "TopLeft": {
+      "X": 713.6,
+      "Y": 418.6
+    },
+    "BottomRight": {
+      "X": 659.2,
+      "Y": 104.20000000000002
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF000000",
+    "FillColor": "#FFFFFFFF",
+    "StrokeThickness": 1
+  },
+  {
+    "Type": "Rectangle",
+    "TopLeft": {
+      "X": 618.4000000000001,
+      "Y": 133.8
+    },
+    "BottomRight": {
+      "X": 508,
+      "Y": 418.6
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF000000",
+    "FillColor": "#FFFFFFFF",
+    "StrokeThickness": 1
+  },
+  {
+    "Type": "Rectangle",
+    "TopLeft": {
+      "X": 436,
+      "Y": 469
+    },
+    "BottomRight": {
+      "X": 132,
+      "Y": 331.40000000000003
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF000000",
+    "FillColor": "#FFFFFFFF",
+    "StrokeThickness": 1
+  }
+]

@@ -21,11 +21,11 @@ namespace GraphicalEditor
         //
         public MainWindow()
         {
-            InitializeComponent(); 
-            _serializationController = new SerializationController();
-
+            InitializeComponent();
             var undoRedoService = new UndoRedoService();
             _undoRedoController = new UndoRedoController(undoRedoService, drawCanvas);
+            _serializationController = new SerializationController(_undoRedoController);
+            //_serializationController = new SerializationController();
 
             drawCanvas.SetUndoRedoController(_undoRedoController);
             drawCanvas.DrawingSettingsController = _drawingSettingsController;

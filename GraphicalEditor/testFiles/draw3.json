@@ -1,0 +1,77 @@
+[
+  {
+    "Type": "Rectangle",
+    "TopLeft": {
+      "X": 93.60000000000002,
+      "Y": 69.80000000000001
+    },
+    "BottomRight": {
+      "X": 573.6,
+      "Y": 315.40000000000003
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF000000",
+    "FillColor": "#FFFFFFFF",
+    "StrokeThickness": 1
+  },
+  {
+    "Type": "Rectangle",
+    "TopLeft": {
+      "X": 368,
+      "Y": 353
+    },
+    "BottomRight": {
+      "X": 506.4,
+      "Y": 432.20000000000005
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FFFFF8DC",
+    "FillColor": "#FF000000",
+    "StrokeThickness": 3.117808219178085
+  },
+  {
+    "Type": "Rectangle",
+    "TopLeft": {
+      "X": 659.2,
+      "Y": 471.4
+    },
+    "BottomRight": {
+      "X": 596.8000000000001,
+      "Y": 112.20000000000002
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FFFFF8DC",
+    "FillColor": "#FF000000",
+    "StrokeThickness": 3.117808219178085
+  },
+  {
+    "Type": "Rectangle",
+    "TopLeft": {
+      "X": 785.6,
+      "Y": 113.80000000000001
+    },
+    "BottomRight": {
+      "X": 830.4000000000001,
+      "Y": 558.6
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FFFFF8DC",
+    "FillColor": "#FF000000",
+    "StrokeThickness": 3.117808219178085
+  },
+  {
+    "Type": "Rectangle",
+    "TopLeft": {
+      "X": 88,
+      "Y": 61
+    },
+    "BottomRight": {
+      "X": 506.4,
+      "Y": 383.40000000000003
+    },
+    "IsMultiClick": false,
+    "StrokeColor": "#FF000000",
+    "FillColor": "#FF556B2F",
+    "StrokeThickness": 7.490410958904106
+  }
+]
